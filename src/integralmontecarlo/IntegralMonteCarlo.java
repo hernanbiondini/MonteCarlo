@@ -34,15 +34,12 @@ public class IntegralMonteCarlo {
 //            System.out.println("Exception: " + e.getMessage());
 //        }
 
-
-
 //        String funcion = "x";
 //        double a = 0;
 //        double b = 1;
 //        int n = 1000;
 //        MonteCarlo mc = new MonteCarlo();
 //        mc.monteCarloIntegralSimple(funcion, a, b, n);
-        
 //        String funcion = "x y";
 //        double a = 1;
 //        double b = 4;
@@ -51,18 +48,26 @@ public class IntegralMonteCarlo {
 //        int n = 1000000;
 //        MonteCarlo mc = new MonteCarlo();
 //        mc.monteCarloIntegralDoble(funcion, a, b, c, d, n);
-        
-        String funcion = " 8 x y z";
-        double a = 1;
-        double b = 2;
-        double c = 2;
-        double d = 3;
-        double e = 0;
-        double f = 1;
-        int n = 1000000;
+
+        String funcion = " x^(2) + y^(2)";
+        double a = 0;
+        double b = 1;
+        double c = 0;
+        double d = 1;
+        int n = 5000;
         MonteCarlo mc = new MonteCarlo();
-        mc.monteCarloIntegralTriple(funcion, a, b, c, d, e, f, n);
-        
+        mc.monteCarloIntegralDoble(funcion, a, b, c, d, n);
+
+//        String funcion = " 8 x y z";
+//        double a = 1;
+//        double b = 2;
+//        double c = 2;
+//        double d = 3;
+//        double e = 0;
+//        double f = 1;
+//        int n = 1000000;
+//        MonteCarlo mc = new MonteCarlo();
+//        mc.monteCarloIntegralTriple(funcion, a, b, c, d, e, f, n);
     }
 
 }
