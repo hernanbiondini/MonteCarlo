@@ -26,6 +26,7 @@ public class Parseador {
     public void configuracion_1() {
         myParser.setImplicitMul(true);
         this.agregarFuncionesYConstantesStandar();
+        //myParser.setTraverse(true);
     }
 
     public void agregarVariable(String variable, double valor) {

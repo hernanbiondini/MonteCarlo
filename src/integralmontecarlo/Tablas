@@ -1,0 +1,57 @@
+
+Funciones
+
+sin()
+cos()
+tan()
+asin()
+acos()
+atan()
+sinh()
+cosh()
+tanh()
+asinh()
+acosh()
+atanh()
+ln()
+log()
+angle()
+abs()
+rand()
+mod()
+sqrt()
+sum()
+
+
+Constantes
+
+π ≈ Math.PI = 3,141592653589793
+e ≈ Math.E = 2,718281828459045
+
+
+Operadores
+
+Potencia >> ^
+No Lógico >> !
+Mas Unario, Menos Unario >> +x, −x
+Modulo >> %
+División >> /
+Multiplicación >> ∗
+Adición, Sustracción >> +, −
+Menor o Igual, Mayor o Igual >> <=, >=
+Menor que o Mayor que >> <, >
+No es Igual, Igual >> ! =, ==
+Y Lógico >> &&
+O Lógico >> ||
+
+
+
+
+
+
+
+
+
+
+
+
