@@ -174,7 +174,7 @@ public class MonteCarlo {
                     x = a + Math.random() * Math.abs(b - a);
                     y = c + Math.random() * Math.abs(d - c);
                     z = e + Math.random() * Math.abs(f - e);
-                    u = e + Math.random() * Math.abs(h - g);
+                    u = g + Math.random() * Math.abs(h - g);
                     p.agregarVariable("x", x);
                     p.agregarVariable("y", y);
                     p.agregarVariable("z", z);
@@ -200,5 +200,62 @@ public class MonteCarlo {
         }
     }
     
+    public void monteCarloIntegralQuintuple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, double i, double j, int n) {
+        System.out.println("Evaluando integral quintuple...");
+        DecimalFormat fmt = new DecimalFormat("0.################");
+        String resultadoParseo = "";
+        double approx = 0.0;
+        Parseador p;
+        p = new Parseador();
+        p.configuracion_1();
+        p.agregarVariable("x", 0);
+        p.agregarVariable("y", 0);
+        p.agregarVariable("z", 0);
+        p.agregarVariable("u", 0);
+        p.agregarVariable("w", 0);
+
+        try {
+            resultadoParseo = p.parsearExpresion(funcion);
+            if (resultadoParseo.equals("ok")) {
+                double x;
+                double y;
+                double z;
+                double u;
+                double w;
+                double sum = 0;
+                double fs = 0.0;
+                double f2s = 0.0;
+                double errest = 0.0;
+                for (int cont = 0; cont < n; cont++) {
+                    x = a + Math.random() * Math.abs(b - a);
+                    y = c + Math.random() * Math.abs(d - c);
+                    z = e + Math.random() * Math.abs(f - e);
+                    u = g + Math.random() * Math.abs(h - g);
+                    w = i + Math.random() * Math.abs(j - i);
+                    p.agregarVariable("x", x);
+                    p.agregarVariable("y", y);
+                    p.agregarVariable("z", z);
+                    p.agregarVariable("u", u);
+                    p.agregarVariable("w", w);
+                    sum += p.evaluarExpresionDouble();
+                    fs = fs + p.evaluarExpresionDouble();
+                    f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                }
+                approx = Math.abs(b - a) * Math.abs(d - c) * Math.abs(f - e) * Math.abs(h - g) * Math.abs(j - i) * sum / n;
+                
+                fs = fs / n;
+                f2s = f2s / n;
+                errest = (b - a) * (d - c) * (f - e)* (h - g) * (j - i) *sqrt((f2s - fs * fs) / n);
+                
+                System.out.println("\nMonte Carlo, integral quintuple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+            } else {
+                System.out.println(resultadoParseo);
+            }
+        } catch (ParseException ex) {
+            System.out.println("ParseException " + ex.getMessage());
+        } catch (Exception ee) {
+            System.out.println("Exception " + ee.getMessage());
+        }
+    }
     
 }

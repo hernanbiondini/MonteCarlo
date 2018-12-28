@@ -167,18 +167,34 @@ public class IntegralMonteCarlo {
 //        MonteCarlo mc = new MonteCarlo();
 //        mc.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
         
-        String funcion = " sqrt(5 - x^(2) - y^(2) - z^(2) - u^(2))";
+//        String funcion = " sqrt(5 - x^(2) - y^(2) - z^(2) - u^(2))";
+//        double a = 0;
+//        double b = 0.8; // 4/5
+//        double c = 0;
+//        double d = 0.9; // 9/10
+//        double e = 0;
+//        double f = 1; 
+//        double g = 0;
+//        double h = 1.1; // 11/10
+//        int n = 1000000;
+//        MonteCarlo mc = new MonteCarlo();
+//        mc.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
+
+
+        String funcion = " sqrt(6 - x^(2) - y^(2) - z^(2) - u^(2) - w^(2))";
         double a = 0;
-        double b = 0.8; // 4/5
+        double b = 0.7; // 7/10
         double c = 0;
-        double d = 0.9; // 9/10
+        double d = 0.8; // 4/5
         double e = 0;
-        double f = 1; 
+        double f = 0.9; // 9/10
         double g = 0;
-        double h = 1.1; // 11/10
+        double h = 1; 
+        double i = 0;
+        double j = 1.1; // 11/10
         int n = 1000000;
         MonteCarlo mc = new MonteCarlo();
-        mc.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
+        mc.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
     }
 
 }
