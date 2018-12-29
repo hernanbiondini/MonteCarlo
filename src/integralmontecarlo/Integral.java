@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package integralmontecarlo;
+
+import Atxy2k.CustomTextField.RestrictedTextField;
 
 /**
  *
@@ -16,7 +13,8 @@ public class Integral extends javax.swing.JFrame {
      */
     public Integral() {
         initComponents();
-        setLocationRelativeTo(null);  
+        setLocationRelativeTo(null);
+        this.formatearTextFields();
     }
 
     /**
@@ -32,62 +30,62 @@ public class Integral extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        jTextFieldIntegralSimpleExpresion = new javax.swing.JTextField();
+        jTextFieldIntegralSimpleB = new javax.swing.JTextField();
+        jTextFieldIntegralSimpleA = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        jTextField4 = new javax.swing.JTextField();
+        jTextFieldIntegralDobleB = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        jTextFieldIntegralDobleA = new javax.swing.JTextField();
+        jTextFieldIntegralDobleD = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
+        jTextFieldIntegralDobleC = new javax.swing.JTextField();
+        jTextFieldIntegralDobleExpresion = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jTextField8 = new javax.swing.JTextField();
+        jTextFieldIntegralTripleB = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        jTextFieldIntegralTripleA = new javax.swing.JTextField();
+        jTextFieldIntegralTripleC = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
+        jTextFieldIntegralTripleD = new javax.swing.JTextField();
+        jTextFieldIntegralTripleE = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
+        jTextFieldIntegralTripleF = new javax.swing.JTextField();
+        jTextFieldIntegralTripleExpresion = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jTextField14 = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleA = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleB = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleC = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleD = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleE = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleF = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleG = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField34 = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleH = new javax.swing.JTextField();
+        jTextFieldIntegralCuadrupleExpresion = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jTextField22 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleA = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleB = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleC = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleD = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleE = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleF = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleG = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleH = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleI = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField35 = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleJ = new javax.swing.JTextField();
+        jTextFieldIntegralQuintupleExpresion = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -100,11 +98,11 @@ public class Integral extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setText("dx");
 
-        jTextField1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jTextFieldIntegralSimpleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralSimpleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTextFieldIntegralSimpleBActionPerformed(evt);
             }
         });
 
@@ -115,11 +113,11 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField2)
+                    .addComponent(jTextFieldIntegralSimpleA)
+                    .addComponent(jTextFieldIntegralSimpleB)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralSimpleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addContainerGap(692, Short.MAX_VALUE))
@@ -127,42 +125,42 @@ public class Integral extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(168, Short.MAX_VALUE)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(166, 166, 166)
+                .addComponent(jTextFieldIntegralSimpleB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralSimpleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)))
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralSimpleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(149, 149, 149))
         );
 
         jTabbedPane2.addTab("Integral simple", jPanel5);
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralDobleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jTextFieldIntegralDobleBActionPerformed(evt);
             }
         });
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel3.setText("∫");
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralDobleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jTextFieldIntegralDobleDActionPerformed(evt);
             }
         });
 
         jLabel4.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel4.setText("∫");
 
-        jTextField32.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jTextFieldIntegralDobleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel17.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel17.setText("dy dx");
@@ -174,16 +172,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField5)
-                    .addComponent(jTextField4)
+                    .addComponent(jTextFieldIntegralDobleA)
+                    .addComponent(jTextFieldIntegralDobleB)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField7)
-                    .addComponent(jTextField6)
+                    .addComponent(jTextFieldIntegralDobleC)
+                    .addComponent(jTextFieldIntegralDobleD)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralDobleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(412, Short.MAX_VALUE))
@@ -194,7 +192,7 @@ public class Integral extends javax.swing.JFrame {
                 .addGap(166, 166, 166)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralDobleD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -202,24 +200,24 @@ public class Integral extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(59, 59, 59)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldIntegralDobleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel17))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralDobleC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralDobleB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextFieldIntegralDobleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(151, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Integral doble", jPanel1);
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralTripleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTextFieldIntegralTripleBActionPerformed(evt);
             }
         });
 
@@ -229,22 +227,22 @@ public class Integral extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel6.setText("∫");
 
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralTripleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
+                jTextFieldIntegralTripleDActionPerformed(evt);
             }
         });
 
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel7.setText("∫");
 
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralTripleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                jTextFieldIntegralTripleFActionPerformed(evt);
             }
         });
 
-        jTextField33.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jTextFieldIntegralTripleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel18.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel18.setText("dz dy dx");
@@ -256,21 +254,21 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField9)
-                    .addComponent(jTextField8)
+                    .addComponent(jTextFieldIntegralTripleA)
+                    .addComponent(jTextFieldIntegralTripleB)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField10)
-                    .addComponent(jTextField11)
+                    .addComponent(jTextFieldIntegralTripleC)
+                    .addComponent(jTextFieldIntegralTripleD)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField12)
-                    .addComponent(jTextField13)
+                    .addComponent(jTextFieldIntegralTripleE)
+                    .addComponent(jTextFieldIntegralTripleF)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralTripleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(359, Short.MAX_VALUE))
@@ -281,7 +279,7 @@ public class Integral extends javax.swing.JFrame {
                 .addGap(168, 168, 168)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralTripleF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -289,23 +287,23 @@ public class Integral extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(56, 56, 56)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldIntegralTripleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel18))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralTripleE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralTripleD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldIntegralTripleC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralTripleB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel5)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTextFieldIntegralTripleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(149, Short.MAX_VALUE))
         );
 
@@ -314,40 +312,40 @@ public class Integral extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel8.setText("∫");
 
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralCuadrupleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+                jTextFieldIntegralCuadrupleBActionPerformed(evt);
             }
         });
 
         jLabel9.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel9.setText("∫");
 
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralCuadrupleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
+                jTextFieldIntegralCuadrupleDActionPerformed(evt);
             }
         });
 
         jLabel10.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel10.setText("∫");
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralCuadrupleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
+                jTextFieldIntegralCuadrupleFActionPerformed(evt);
             }
         });
 
         jLabel11.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel11.setText("∫");
 
-        jTextField21.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralCuadrupleH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField21ActionPerformed(evt);
+                jTextFieldIntegralCuadrupleHActionPerformed(evt);
             }
         });
 
-        jTextField34.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jTextFieldIntegralCuadrupleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel19.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel19.setText("du dz dy dx");
@@ -359,26 +357,26 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField14)
-                    .addComponent(jTextField15)
+                    .addComponent(jTextFieldIntegralCuadrupleA)
+                    .addComponent(jTextFieldIntegralCuadrupleB)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField16)
-                    .addComponent(jTextField17)
+                    .addComponent(jTextFieldIntegralCuadrupleC)
+                    .addComponent(jTextFieldIntegralCuadrupleD)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField18)
-                    .addComponent(jTextField19)
+                    .addComponent(jTextFieldIntegralCuadrupleE)
+                    .addComponent(jTextFieldIntegralCuadrupleF)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField20)
-                    .addComponent(jTextField21)
+                    .addComponent(jTextFieldIntegralCuadrupleG)
+                    .addComponent(jTextFieldIntegralCuadrupleH)
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralCuadrupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(242, Short.MAX_VALUE))
@@ -389,7 +387,7 @@ public class Integral extends javax.swing.JFrame {
                 .addGap(168, 168, 168)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralCuadrupleH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -397,28 +395,28 @@ public class Integral extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGap(56, 56, 56)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldIntegralCuadrupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel19))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralCuadrupleG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralCuadrupleF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralCuadrupleE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralCuadrupleD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralCuadrupleC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralCuadrupleB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextFieldIntegralCuadrupleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(149, Short.MAX_VALUE))
         );
 
@@ -427,49 +425,49 @@ public class Integral extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel12.setText("∫");
 
-        jTextField23.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralQuintupleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField23ActionPerformed(evt);
+                jTextFieldIntegralQuintupleBActionPerformed(evt);
             }
         });
 
         jLabel13.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel13.setText("∫");
 
-        jTextField25.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralQuintupleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField25ActionPerformed(evt);
+                jTextFieldIntegralQuintupleDActionPerformed(evt);
             }
         });
 
         jLabel14.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel14.setText("∫");
 
-        jTextField27.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralQuintupleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField27ActionPerformed(evt);
+                jTextFieldIntegralQuintupleFActionPerformed(evt);
             }
         });
 
         jLabel15.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel15.setText("∫");
 
-        jTextField29.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralQuintupleH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField29ActionPerformed(evt);
+                jTextFieldIntegralQuintupleHActionPerformed(evt);
             }
         });
 
         jLabel16.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel16.setText("∫");
 
-        jTextField31.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldIntegralQuintupleJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField31ActionPerformed(evt);
+                jTextFieldIntegralQuintupleJActionPerformed(evt);
             }
         });
 
-        jTextField35.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jTextFieldIntegralQuintupleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel20.setText("dw du dz dy dx  ");
@@ -481,31 +479,31 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField22)
-                    .addComponent(jTextField23)
+                    .addComponent(jTextFieldIntegralQuintupleA)
+                    .addComponent(jTextFieldIntegralQuintupleB)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField24)
-                    .addComponent(jTextField25)
+                    .addComponent(jTextFieldIntegralQuintupleC)
+                    .addComponent(jTextFieldIntegralQuintupleD)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField26)
-                    .addComponent(jTextField27)
+                    .addComponent(jTextFieldIntegralQuintupleE)
+                    .addComponent(jTextFieldIntegralQuintupleF)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField28)
-                    .addComponent(jTextField29)
+                    .addComponent(jTextFieldIntegralQuintupleG)
+                    .addComponent(jTextFieldIntegralQuintupleH)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField30)
-                    .addComponent(jTextField31)
+                    .addComponent(jTextFieldIntegralQuintupleI)
+                    .addComponent(jTextFieldIntegralQuintupleJ)
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextFieldIntegralQuintupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(176, Short.MAX_VALUE))
@@ -516,7 +514,7 @@ public class Integral extends javax.swing.JFrame {
                 .addGap(168, 168, 168)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralQuintupleJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -525,34 +523,34 @@ public class Integral extends javax.swing.JFrame {
                                 .addGap(59, 59, 59)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel20)
-                                    .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jTextFieldIntegralQuintupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralQuintupleI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextFieldIntegralQuintupleH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextFieldIntegralQuintupleG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                            .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralQuintupleF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel14)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldIntegralQuintupleE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralQuintupleD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel13)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextFieldIntegralQuintupleC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldIntegralQuintupleB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel12)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTextFieldIntegralQuintupleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(149, Short.MAX_VALUE))
         );
 
@@ -578,65 +576,65 @@ public class Integral extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextFieldIntegralSimpleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralSimpleBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralSimpleBActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTextFieldIntegralDobleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralDobleBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralDobleBActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTextFieldIntegralDobleDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralDobleDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralDobleDActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTextFieldIntegralTripleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralTripleBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralTripleBActionPerformed
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+    private void jTextFieldIntegralTripleDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralTripleDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralTripleDActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void jTextFieldIntegralTripleFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralTripleFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralTripleFActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void jTextFieldIntegralCuadrupleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralCuadrupleBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralCuadrupleBActionPerformed
 
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+    private void jTextFieldIntegralCuadrupleDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralCuadrupleDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralCuadrupleDActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+    private void jTextFieldIntegralCuadrupleFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralCuadrupleFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralCuadrupleFActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+    private void jTextFieldIntegralCuadrupleHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralCuadrupleHActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralCuadrupleHActionPerformed
 
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+    private void jTextFieldIntegralQuintupleBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralQuintupleBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralQuintupleBActionPerformed
 
-    private void jTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField25ActionPerformed
+    private void jTextFieldIntegralQuintupleDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralQuintupleDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField25ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralQuintupleDActionPerformed
 
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
+    private void jTextFieldIntegralQuintupleFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralQuintupleFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralQuintupleFActionPerformed
 
-    private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
+    private void jTextFieldIntegralQuintupleHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralQuintupleHActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField29ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralQuintupleHActionPerformed
 
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
+    private void jTextFieldIntegralQuintupleJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIntegralQuintupleJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
+    }//GEN-LAST:event_jTextFieldIntegralQuintupleJActionPerformed
 
     /**
      * @param args the command line arguments
@@ -700,40 +698,146 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
-    private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleA;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleB;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleC;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleD;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleE;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleExpresion;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleF;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleG;
+    private javax.swing.JTextField jTextFieldIntegralCuadrupleH;
+    private javax.swing.JTextField jTextFieldIntegralDobleA;
+    private javax.swing.JTextField jTextFieldIntegralDobleB;
+    private javax.swing.JTextField jTextFieldIntegralDobleC;
+    private javax.swing.JTextField jTextFieldIntegralDobleD;
+    private javax.swing.JTextField jTextFieldIntegralDobleExpresion;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleA;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleB;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleC;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleD;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleE;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleExpresion;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleF;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleG;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleH;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleI;
+    private javax.swing.JTextField jTextFieldIntegralQuintupleJ;
+    private javax.swing.JTextField jTextFieldIntegralSimpleA;
+    private javax.swing.JTextField jTextFieldIntegralSimpleB;
+    private javax.swing.JTextField jTextFieldIntegralSimpleExpresion;
+    private javax.swing.JTextField jTextFieldIntegralTripleA;
+    private javax.swing.JTextField jTextFieldIntegralTripleB;
+    private javax.swing.JTextField jTextFieldIntegralTripleC;
+    private javax.swing.JTextField jTextFieldIntegralTripleD;
+    private javax.swing.JTextField jTextFieldIntegralTripleE;
+    private javax.swing.JTextField jTextFieldIntegralTripleExpresion;
+    private javax.swing.JTextField jTextFieldIntegralTripleF;
     // End of variables declaration//GEN-END:variables
+
+private void formatearTextFields(){
+        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA);
+        restricted1.setOnlyNums(true);
+        restricted1.setLimit(5);
+        RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB);
+        restricted2.setOnlyNums(true);
+        restricted2.setLimit(5);
+       
+   
+        RestrictedTextField restricted3 = new RestrictedTextField(this.jTextFieldIntegralDobleA);
+        restricted3.setOnlyNums(true);
+        restricted3.setLimit(5);     
+        RestrictedTextField restricted4 = new RestrictedTextField(this.jTextFieldIntegralDobleB);
+        restricted4.setOnlyNums(true);
+        restricted4.setLimit(5);  
+        RestrictedTextField restricted5 = new RestrictedTextField(this.jTextFieldIntegralDobleC);
+        restricted5.setOnlyNums(true);
+        restricted5.setLimit(5);      
+        RestrictedTextField restricted6 = new RestrictedTextField(this.jTextFieldIntegralDobleD);
+        restricted6.setOnlyNums(true);
+        restricted6.setLimit(5);
+
+
+        RestrictedTextField restricted7 = new RestrictedTextField(this.jTextFieldIntegralTripleA);
+        restricted7.setOnlyNums(true);
+        restricted7.setLimit(5); 
+        RestrictedTextField restricted8 = new RestrictedTextField(this.jTextFieldIntegralTripleB);
+        restricted8.setOnlyNums(true);
+        restricted8.setLimit(5);
+        RestrictedTextField restricted9 = new RestrictedTextField(this.jTextFieldIntegralTripleC);
+        restricted9.setOnlyNums(true);
+        restricted9.setLimit(5);
+        RestrictedTextField restricted10 = new RestrictedTextField(this.jTextFieldIntegralTripleD);
+        restricted10.setOnlyNums(true);
+        restricted10.setLimit(5);
+        RestrictedTextField restricted11 = new RestrictedTextField(this.jTextFieldIntegralTripleE);
+        restricted11.setOnlyNums(true);
+        restricted11.setLimit(5);
+        RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF);
+        restricted12.setOnlyNums(true);
+        restricted12.setLimit(5);
+
+
+
+        RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA);
+        restricted13.setOnlyNums(true);
+        restricted13.setLimit(5); 
+        RestrictedTextField restricted14 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleB);
+        restricted14.setOnlyNums(true);
+        restricted14.setLimit(5);
+        RestrictedTextField restricted15 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleC);
+        restricted15.setOnlyNums(true);
+        restricted15.setLimit(5);
+        RestrictedTextField restricted16 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleD);
+        restricted16.setOnlyNums(true);
+        restricted16.setLimit(5);
+        RestrictedTextField restricted17 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleE);
+        restricted17.setOnlyNums(true);
+        restricted17.setLimit(5);
+        RestrictedTextField restricted18 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleF);
+        restricted18.setOnlyNums(true);
+        restricted18.setLimit(5);
+         RestrictedTextField restricted19 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleG);
+        restricted19.setOnlyNums(true);
+        restricted19.setLimit(5);
+        RestrictedTextField restricted20 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleH);
+        restricted20.setOnlyNums(true);
+        restricted20.setLimit(5);
+
+
+        
+        RestrictedTextField restrictedq = new RestrictedTextField(this.jTextFieldIntegralQuintupleA);
+        restrictedq.setOnlyNums(true);
+        restrictedq.setLimit(5);
+        RestrictedTextField restrictedw = new RestrictedTextField(this.jTextFieldIntegralQuintupleB);
+        restrictedw.setOnlyNums(true);
+        restrictedw.setLimit(5);
+        RestrictedTextField restrictede = new RestrictedTextField(this.jTextFieldIntegralQuintupleC);
+        restrictede.setOnlyNums(true);
+        restrictede.setLimit(5);
+        RestrictedTextField restrictedr = new RestrictedTextField(this.jTextFieldIntegralQuintupleD);
+        restrictedr.setOnlyNums(true);
+        restrictedr.setLimit(5);
+        RestrictedTextField restrictedt = new RestrictedTextField(this.jTextFieldIntegralQuintupleE);
+        restrictedt.setOnlyNums(true);
+        restrictedt.setLimit(5);
+        RestrictedTextField restrictedy = new RestrictedTextField(this.jTextFieldIntegralQuintupleF);
+        restrictedy.setOnlyNums(true);
+        restrictedy.setLimit(5);
+        RestrictedTextField restrictedu = new RestrictedTextField(this.jTextFieldIntegralQuintupleG);
+        restrictedu.setOnlyNums(true);
+        restrictedu.setLimit(5);
+        RestrictedTextField restrictedi = new RestrictedTextField(this.jTextFieldIntegralQuintupleH);
+        restrictedi.setOnlyNums(true);
+        restrictedi.setLimit(5);
+        RestrictedTextField restrictedo = new RestrictedTextField(this.jTextFieldIntegralQuintupleI);
+        restrictedo.setOnlyNums(true);
+        restrictedo.setLimit(5);
+        RestrictedTextField restrictedp = new RestrictedTextField(this.jTextFieldIntegralQuintupleJ);
+        restrictedp.setOnlyNums(true);
+        restrictedp.setLimit(5);
+
+}
+
+
 }

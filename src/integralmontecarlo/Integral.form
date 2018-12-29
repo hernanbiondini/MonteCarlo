@@ -62,12 +62,12 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField3" max="32767" attributes="0"/>
-                          <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralSimpleA" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralSimpleB" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField1" min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralSimpleExpresion" min="-2" pref="393" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="692" max="32767" attributes="0"/>
@@ -77,21 +77,21 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="168" max="32767" attributes="0"/>
-                      <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralSimpleB" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralSimpleExpresion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralSimpleA" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -114,19 +114,19 @@
                 <Property name="text" type="java.lang.String" value="dx"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralSimpleExpresion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="18" style="0"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralSimpleB">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralSimpleBActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralSimpleA">
             </Component>
           </SubComponents>
         </Container>
@@ -145,18 +145,18 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralDobleA" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralDobleB" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel3" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField7" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField6" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralDobleC" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralDobleD" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField32" min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralDobleExpresion" min="-2" pref="393" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel17" min="-2" pref="215" max="-2" attributes="0"/>
                       <EmptySpace pref="412" max="32767" attributes="0"/>
@@ -169,7 +169,7 @@
                       <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField6" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralDobleD" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -178,20 +178,20 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField32" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldIntegralDobleExpresion" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField7" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralDobleC" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralDobleB" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField5" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralDobleA" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="151" max="32767" attributes="0"/>
@@ -200,9 +200,9 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jTextField4">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralDobleB">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralDobleBActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
@@ -213,11 +213,11 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField5">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralDobleA">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField6">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralDobleD">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField6ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralDobleDActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
@@ -228,9 +228,9 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField7">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralDobleC">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField32">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralDobleExpresion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="18" style="0"/>
@@ -262,24 +262,24 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleA" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleB" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField10" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField11" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleC" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleD" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel6" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField12" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField13" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleE" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralTripleF" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel7" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField33" min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralTripleExpresion" min="-2" pref="393" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel18" min="-2" pref="187" max="-2" attributes="0"/>
                       <EmptySpace pref="359" max="32767" attributes="0"/>
@@ -292,7 +292,7 @@
                       <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField13" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralTripleF" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -301,28 +301,28 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField33" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldIntegralTripleExpresion" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField12" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralTripleE" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralTripleD" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralTripleC" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jTextField8" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralTripleB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralTripleA" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -332,9 +332,9 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jTextField8">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleB">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralTripleBActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
@@ -345,9 +345,9 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField9">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleA">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField10">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleC">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
@@ -357,12 +357,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField11">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleD">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField11ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralTripleDActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField12">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleE">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
@@ -372,12 +372,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField13">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleF">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField13ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralTripleFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField33">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralTripleExpresion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="18" style="0"/>
@@ -409,30 +409,30 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField14" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField15" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleA" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleB" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel8" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField16" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField17" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleC" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleD" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel9" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField18" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField19" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleE" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleF" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel10" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField20" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField21" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleG" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralCuadrupleH" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel11" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField34" min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralCuadrupleExpresion" min="-2" pref="393" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel19" min="-2" pref="223" max="-2" attributes="0"/>
                       <EmptySpace pref="242" max="32767" attributes="0"/>
@@ -445,7 +445,7 @@
                       <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField21" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleH" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -454,34 +454,34 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldIntegralCuadrupleExpresion" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField20" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleG" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jTextField19" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleF" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField18" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleE" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jTextField17" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleD" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField16" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleC" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jTextField15" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleB" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField14" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralCuadrupleA" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="149" max="32767" attributes="0"/>
@@ -490,7 +490,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jTextField14">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleA">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
@@ -500,12 +500,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField15">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleB">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField15ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralCuadrupleBActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField16">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleC">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
@@ -515,12 +515,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField17">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleD">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField17ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralCuadrupleDActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField18">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleE">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
@@ -530,12 +530,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField19">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleF">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField19ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralCuadrupleFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField20">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleG">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
@@ -545,12 +545,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField21">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleH">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField21ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralCuadrupleHActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField34">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralCuadrupleExpresion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="18" style="0"/>
@@ -582,36 +582,36 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField22" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField23" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleA" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleB" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel12" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField24" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField25" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleC" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleD" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel13" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField26" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleE" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleF" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel14" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField28" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField29" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleG" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleH" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel15" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField30" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField31" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleI" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldIntegralQuintupleJ" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel16" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField35" min="-2" pref="393" max="-2" attributes="0"/>
+                      <Component id="jTextFieldIntegralQuintupleExpresion" min="-2" pref="393" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel20" min="-2" pref="208" max="-2" attributes="0"/>
                       <EmptySpace pref="176" max="32767" attributes="0"/>
@@ -624,7 +624,7 @@
                       <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField31" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralQuintupleJ" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -634,41 +634,41 @@
                                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTextField35" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextFieldIntegralQuintupleExpresion" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField30" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralQuintupleI" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jTextField29" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralQuintupleH" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField28" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldIntegralQuintupleG" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jTextField27" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleF" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField26" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleE" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jTextField25" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleD" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField24" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleC" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jTextField23" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField22" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldIntegralQuintupleA" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -678,7 +678,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jTextField22">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleA">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
@@ -688,12 +688,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField23">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleB">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField23ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralQuintupleBActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField24">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleC">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
@@ -703,12 +703,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField25">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleD">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField25ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralQuintupleDActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField26">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleE">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
@@ -718,12 +718,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField27">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleF">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField27ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralQuintupleFActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField28">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleG">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
@@ -733,12 +733,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField29">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleH">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField29ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralQuintupleHActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField30">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleI">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
@@ -748,12 +748,12 @@
                 <Property name="text" type="java.lang.String" value="&#x222b;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField31">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleJ">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField31ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldIntegralQuintupleJActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField35">
+            <Component class="javax.swing.JTextField" name="jTextFieldIntegralQuintupleExpresion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="18" style="0"/>
