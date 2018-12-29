@@ -38,7 +38,7 @@ public class MonteCarlo {
                 fs = fs / n;
                 f2s = f2s / n;
                 errest = (b - a) * sqrt((f2s - fs * fs) / n);
-                System.out.println("\nMonte Carlo, integral: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+                System.out.println("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
             }
@@ -84,7 +84,7 @@ public class MonteCarlo {
                 f2s = f2s / n;
                 errest = (b - a) * (d - c) * sqrt((f2s - fs * fs) / n);
                 
-                System.out.println("\nMonte Carlo, integral doble: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+                System.out.println("\nIntegral doble: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
             }
@@ -134,7 +134,7 @@ public class MonteCarlo {
                 f2s = f2s / n;
                 errest = (b - a) * (d - c) * (f - e)* sqrt((f2s - fs * fs) / n);
                 
-                System.out.println("\nMonte Carlo, integral triple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+                System.out.println("\nIntegral triple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
             }
@@ -147,7 +147,7 @@ public class MonteCarlo {
     
     
     public void monteCarloIntegralCuadruple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, int n) {
-        System.out.println("Evaluando integral cuadruple...");
+        System.out.println("Evaluando integral cuádruple...");
         DecimalFormat fmt = new DecimalFormat("0.################");
         String resultadoParseo = "";
         double approx = 0.0;
@@ -189,7 +189,7 @@ public class MonteCarlo {
                 f2s = f2s / n;
                 errest = (b - a) * (d - c) * (f - e)* (h - g) * sqrt((f2s - fs * fs) / n);
                 
-                System.out.println("\nMonte Carlo, integral cuadruple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+                System.out.println("\nIntegral cuádruple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
             }
@@ -201,7 +201,7 @@ public class MonteCarlo {
     }
     
     public void monteCarloIntegralQuintuple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, double i, double j, int n) {
-        System.out.println("Evaluando integral quintuple...");
+        System.out.println("Evaluando integral quíntuple...");
         DecimalFormat fmt = new DecimalFormat("0.################");
         String resultadoParseo = "";
         double approx = 0.0;
@@ -247,7 +247,7 @@ public class MonteCarlo {
                 f2s = f2s / n;
                 errest = (b - a) * (d - c) * (f - e)* (h - g) * (j - i) *sqrt((f2s - fs * fs) / n);
                 
-                System.out.println("\nMonte Carlo, integral quintuple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+                System.out.println("\nIntegral quíntuple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
             }
