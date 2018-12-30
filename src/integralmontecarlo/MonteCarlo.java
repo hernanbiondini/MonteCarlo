@@ -2,6 +2,7 @@ package integralmontecarlo;
 
 import static java.lang.Math.sqrt;
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 import org.nfunk.jep.ParseException;
 
 /**
@@ -10,7 +11,7 @@ import org.nfunk.jep.ParseException;
  */
 public class MonteCarlo {
 
-    public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, int n) {
+    public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, int n) throws ParseException , Exception{
         System.out.println("Evaluando integral...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -20,38 +21,34 @@ public class MonteCarlo {
         p = new Parseador();
         p.configuracion_1();
         p.agregarVariable("x", 0);
-        try {
-            resultadoParseo = p.parsearExpresion(funcion);
-            if (resultadoParseo.equals("ok")) {
-                double x;
-                double fs = 0.0;
-                double f2s = 0.0;
-                double errest = 0.0;
-                double sum = 0;
-                for (int i = 0; i < n; i++) {
-                    x = Math.random() * (b - a) + a;
-                    p.agregarVariable("x", x);
-                    sum += p.evaluarExpresionDouble();
-                    fs = fs + p.evaluarExpresionDouble();
-                    f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
-                }
-                approx = (b - a) * sum / n;
-                fs = fs / n;
-                f2s = f2s / n;
-                errest = (b - a) * sqrt((f2s - fs * fs) / n);
-               
-                r.setRespuesta(String.valueOf(approx));
-                r.setEstimacionError(String.valueOf(errest));
-                r.setRespuestaConsola("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
-               
-                System.out.println("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
-            } else {
-                System.out.println(resultadoParseo);
+   
+        resultadoParseo = p.parsearExpresion(funcion);
+        if (resultadoParseo.equals("ok")) {
+            double x;
+            double fs = 0.0;
+            double f2s = 0.0;
+            double errest = 0.0;
+            double sum = 0;
+            for (int i = 0; i < n; i++) {
+                x = Math.random() * (b - a) + a;
+                p.agregarVariable("x", x);
+                sum += p.evaluarExpresionDouble();
+                fs = fs + p.evaluarExpresionDouble();
+                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
             }
-        } catch (ParseException ex) {
-            System.out.println("ParseException " + ex.getMessage());
-        } catch (Exception e) {
-            System.out.println("Exception " + e.getMessage());
+            approx = (b - a) * sum / n;
+            fs = fs / n;
+            f2s = f2s / n;
+            errest = (b - a) * sqrt((f2s - fs * fs) / n);
+
+            r.setRespuesta(String.valueOf(approx));
+            r.setEstimacionError(String.valueOf(errest));
+            r.setRespuestaConsola("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+
+            System.out.println("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+        } else {
+            System.out.println(resultadoParseo);
+            JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
         }
         return r;
     }

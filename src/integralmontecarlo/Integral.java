@@ -3,6 +3,8 @@ package integralmontecarlo;
 import Atxy2k.CustomTextField.RestrictedTextField;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import org.nfunk.jep.ParseException;
 
 /**
  *
@@ -22,7 +24,14 @@ public class Integral extends javax.swing.JFrame {
         this.jLabelEvaluando2.setText("");
         this.jLabelEvaluando3.setText("");
         this.jLabelEvaluando4.setText("");
-        this.jLabelEvaluando4.setText("");
+        this.jLabelEvaluando5.setText("");
+        
+        this.jLabelEvaluando1.setVisible(false);
+        this.jLabelEvaluando2.setVisible(false);
+        this.jLabelEvaluando3.setVisible(false);
+        this.jLabelEvaluando4.setVisible(false);
+        this.jLabelEvaluando5.setVisible(false);
+
     }
 
     /**
@@ -1291,6 +1300,7 @@ public class Integral extends javax.swing.JFrame {
     }
 
     private void aproxSimple() {
+        try{
         String funcion = "";
         double a = 0.0;
         double b = 0.0;
@@ -1304,5 +1314,19 @@ public class Integral extends javax.swing.JFrame {
         this.jLabelEvaluando1.setText("Listo");
         this.jTextField1SimpleValor.setText(r.getRespuesta());
         this.jTextField2SimpleError.setText(r.getEstimacionError());
+        
+        }catch(ParseException e){
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("ParseException: " + e.getMessage());
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("NumberFormatException: " + e.getMessage());
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Exception: " + e.getMessage());
+        }
     }
+        
 }

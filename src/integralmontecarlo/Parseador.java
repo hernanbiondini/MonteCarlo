@@ -38,18 +38,18 @@ public class Parseador {
         myParser.addStandardConstants(); 
     }
 
-    public String parsearExpresion(String expresion) throws ParseException {
+    public String parsearExpresion(String expresion) throws ParseException, Exception {
         String resultado = "ok";
         myParser.parseExpression(expresion);
         if (myParser.hasError()) {
             System.out.println("Error durante el análisis sintáctico");
             System.out.println(myParser.getErrorInfo());
-            resultado = "Error durante el análisis sintáctico: " + myParser.getErrorInfo();
+            resultado = myParser.getErrorInfo();
         }
         return resultado;
     }
 
-    public String evaluarExpresionString() {
+    public String evaluarExpresionString() throws Exception{
         String resultado = "";
         resultado = String.valueOf(myParser.getValue());
         if (myParser.hasError()) {
