@@ -10,8 +10,9 @@ import org.nfunk.jep.ParseException;
  */
 public class MonteCarlo {
 
-    public void monteCarloIntegralSimple(String funcion, double a, double b, int n) {
+    public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, int n) {
         System.out.println("Evaluando integral...");
+        Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
         String resultadoParseo = "";
         double approx = 0.0;
@@ -38,6 +39,11 @@ public class MonteCarlo {
                 fs = fs / n;
                 f2s = f2s / n;
                 errest = (b - a) * sqrt((f2s - fs * fs) / n);
+               
+                r.setRespuesta(String.valueOf(approx));
+                r.setEstimacionError(String.valueOf(errest));
+                r.setRespuestaConsola("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
+               
                 System.out.println("\nIntegral simple: '" + funcion + "'  con  " + n + " puntos: " + fmt.format(approx) + " Error: " + errest);
             } else {
                 System.out.println(resultadoParseo);
@@ -47,6 +53,7 @@ public class MonteCarlo {
         } catch (Exception e) {
             System.out.println("Exception " + e.getMessage());
         }
+        return r;
     }
 
     public void monteCarloIntegralDoble(String funcion, double a, double b, double c, double d, int n) {
