@@ -36,6 +36,10 @@ public class Integral extends javax.swing.JFrame {
         jTextFieldIntegralSimplePuntos = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
         jButton1IntegralSimpleAproximar = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
+        jTextField1SimpleValor = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField2SimpleError = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jTextFieldIntegralDobleB = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -48,6 +52,10 @@ public class Integral extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jTextFieldIntegralDoblePuntos = new javax.swing.JTextField();
         jButton1IntegralDobleAproximar = new javax.swing.JButton();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField3DobleValor = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField2DobleError = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jTextFieldIntegralTripleB = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -63,6 +71,10 @@ public class Integral extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jTextFieldIntegralTriplePuntos = new javax.swing.JTextField();
         jButton1IntegralTripleAproximar = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField5TripleValor = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField2TripleError = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jTextFieldIntegralCuadrupleA = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
@@ -81,6 +93,10 @@ public class Integral extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jTextFieldIntegralCuadruplePuntos = new javax.swing.JTextField();
         jButton1IntegralCuadrupleAproximar = new javax.swing.JButton();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField5CuadrupleValor = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField2CuadrupleError = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jTextFieldIntegralQuintupleA = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -102,6 +118,10 @@ public class Integral extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jTextFieldIntegralQuintuplePuntos = new javax.swing.JTextField();
         jButton1IntegralQuintupleAproximar = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
+        jTextField5QuintupleValor = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jTextField2QuintupleError = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Aproximación de Integrales por método de Monte Carlo");
@@ -117,15 +137,32 @@ public class Integral extends javax.swing.JFrame {
 
         jTextFieldIntegralSimpleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
+        jTextFieldIntegralSimpleB.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralSimpleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralSimpleBActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralSimpleA.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jTextFieldIntegralSimplePuntos.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jLabel21.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel21.setText("Puntos: ");
 
+        jButton1IntegralSimpleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralSimpleAproximar.setText("Aproximar");
+
+        jLabel26.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel26.setText("Valor aproximado:  ");
+
+        jTextField1SimpleValor.setEditable(false);
+
+        jLabel27.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel27.setText("Estimación del error: ");
+
+        jTextField2SimpleError.setEditable(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -134,7 +171,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1IntegralSimpleAproximar)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jButton1IntegralSimpleAproximar)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField1SimpleValor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel27)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2SimpleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextFieldIntegralSimpleA)
@@ -149,7 +195,7 @@ public class Integral extends javax.swing.JFrame {
                                 .addComponent(jTextFieldIntegralSimplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)))
-                .addContainerGap(688, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,12 +216,18 @@ public class Integral extends javax.swing.JFrame {
                     .addComponent(jTextFieldIntegralSimplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21))
                 .addGap(83, 83, 83)
-                .addComponent(jButton1IntegralSimpleAproximar)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1IntegralSimpleAproximar)
+                    .addComponent(jLabel26)
+                    .addComponent(jTextField1SimpleValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel27)
+                    .addComponent(jTextField2SimpleError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(108, 108, 108))
         );
 
         jTabbedPane2.addTab("Integral simple", jPanel5);
 
+        jTextFieldIntegralDobleB.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralDobleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralDobleBActionPerformed(evt);
@@ -185,6 +237,9 @@ public class Integral extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel3.setText("∫");
 
+        jTextFieldIntegralDobleA.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jTextFieldIntegralDobleD.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralDobleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralDobleDActionPerformed(evt);
@@ -194,14 +249,30 @@ public class Integral extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel4.setText("∫");
 
+        jTextFieldIntegralDobleC.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jTextFieldIntegralDobleExpresion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel17.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel17.setText("dy dx");
 
+        jLabel22.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel22.setText("Puntos: ");
 
+        jTextFieldIntegralDoblePuntos.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jButton1IntegralDobleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralDobleAproximar.setText("Aproximar");
+
+        jLabel28.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel28.setText("Valor aproximado:  ");
+
+        jTextField3DobleValor.setEditable(false);
+
+        jLabel29.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel29.setText("Estimación del error: ");
+
+        jTextField2DobleError.setEditable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -210,7 +281,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1IntegralDobleAproximar)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1IntegralDobleAproximar)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel28)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField3DobleValor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel29)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2DobleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextFieldIntegralDobleA)
@@ -230,7 +310,7 @@ public class Integral extends javax.swing.JFrame {
                                 .addComponent(jTextFieldIntegralDoblePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(408, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -260,12 +340,19 @@ public class Integral extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldIntegralDobleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(83, 83, 83)
-                .addComponent(jButton1IntegralDobleAproximar)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1IntegralDobleAproximar)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel28)
+                        .addComponent(jTextField3DobleValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel29)
+                        .addComponent(jTextField2DobleError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(108, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Integral doble", jPanel1);
 
+        jTextFieldIntegralTripleB.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralTripleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralTripleBActionPerformed(evt);
@@ -275,18 +362,26 @@ public class Integral extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel5.setText("∫");
 
+        jTextFieldIntegralTripleA.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jTextFieldIntegralTripleC.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel6.setText("∫");
 
+        jTextFieldIntegralTripleD.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralTripleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralTripleDActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralTripleE.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel7.setText("∫");
 
+        jTextFieldIntegralTripleF.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralTripleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralTripleFActionPerformed(evt);
@@ -298,9 +393,23 @@ public class Integral extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel18.setText("dz dy dx");
 
+        jLabel23.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel23.setText("Puntos: ");
 
+        jTextFieldIntegralTriplePuntos.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jButton1IntegralTripleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralTripleAproximar.setText("Aproximar");
+
+        jLabel30.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel30.setText("Valor aproximado:  ");
+
+        jTextField5TripleValor.setEditable(false);
+
+        jLabel31.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel31.setText("Estimación del error: ");
+
+        jTextField2TripleError.setEditable(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -309,7 +418,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1IntegralTripleAproximar)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jButton1IntegralTripleAproximar)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel30)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField5TripleValor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2TripleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextFieldIntegralTripleA)
@@ -336,7 +454,7 @@ public class Integral extends javax.swing.JFrame {
                                 .addComponent(jLabel23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextFieldIntegralTriplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(355, Short.MAX_VALUE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -373,42 +491,60 @@ public class Integral extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jTextFieldIntegralTripleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(83, 83, 83)
-                .addComponent(jButton1IntegralTripleAproximar)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1IntegralTripleAproximar)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel30)
+                        .addComponent(jTextField5TripleValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel31)
+                        .addComponent(jTextField2TripleError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Integral triple", jPanel2);
 
+        jTextFieldIntegralCuadrupleA.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel8.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel8.setText("∫");
 
+        jTextFieldIntegralCuadrupleB.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralCuadrupleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralCuadrupleBActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralCuadrupleC.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel9.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel9.setText("∫");
 
+        jTextFieldIntegralCuadrupleD.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralCuadrupleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralCuadrupleDActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralCuadrupleE.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel10.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel10.setText("∫");
 
+        jTextFieldIntegralCuadrupleF.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralCuadrupleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralCuadrupleFActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralCuadrupleG.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel11.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel11.setText("∫");
 
+        jTextFieldIntegralCuadrupleH.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralCuadrupleH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralCuadrupleHActionPerformed(evt);
@@ -420,9 +556,23 @@ public class Integral extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel19.setText("du dz dy dx");
 
+        jLabel24.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel24.setText("Puntos: ");
 
+        jTextFieldIntegralCuadruplePuntos.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jButton1IntegralCuadrupleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralCuadrupleAproximar.setText("Aproximar");
+
+        jLabel32.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel32.setText("Valor aproximado:  ");
+
+        jTextField5CuadrupleValor.setEditable(false);
+
+        jLabel33.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel33.setText("Estimación del error: ");
+
+        jTextField2CuadrupleError.setEditable(false);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -431,7 +581,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1IntegralCuadrupleAproximar)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jButton1IntegralCuadrupleAproximar)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel32)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField5CuadrupleValor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel33)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2CuadrupleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextFieldIntegralCuadrupleA)
@@ -461,7 +620,7 @@ public class Integral extends javax.swing.JFrame {
                                 .addComponent(jTextFieldIntegralCuadruplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(238, Short.MAX_VALUE))
+                .addContainerGap(249, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -503,51 +662,72 @@ public class Integral extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldIntegralCuadrupleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(83, 83, 83)
-                .addComponent(jButton1IntegralCuadrupleAproximar)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1IntegralCuadrupleAproximar)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel32)
+                        .addComponent(jTextField5CuadrupleValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel33)
+                        .addComponent(jTextField2CuadrupleError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Integral cuádruple", jPanel3);
 
+        jTextFieldIntegralQuintupleA.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel12.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel12.setText("∫");
 
+        jTextFieldIntegralQuintupleB.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralQuintupleB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralQuintupleBActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralQuintupleC.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel13.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel13.setText("∫");
 
+        jTextFieldIntegralQuintupleD.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralQuintupleD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralQuintupleDActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralQuintupleE.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel14.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel14.setText("∫");
 
+        jTextFieldIntegralQuintupleF.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralQuintupleF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralQuintupleFActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralQuintupleG.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel15.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel15.setText("∫");
 
+        jTextFieldIntegralQuintupleH.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralQuintupleH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralQuintupleHActionPerformed(evt);
             }
         });
 
+        jTextFieldIntegralQuintupleI.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
         jLabel16.setFont(new java.awt.Font("Dialog", 0, 100)); // NOI18N
         jLabel16.setText("∫");
 
+        jTextFieldIntegralQuintupleJ.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jTextFieldIntegralQuintupleJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIntegralQuintupleJActionPerformed(evt);
@@ -559,9 +739,23 @@ public class Integral extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel20.setText("dw du dz dy dx  ");
 
+        jLabel25.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel25.setText("Puntos: ");
 
+        jTextFieldIntegralQuintuplePuntos.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+
+        jButton1IntegralQuintupleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralQuintupleAproximar.setText("Aproximar");
+
+        jLabel34.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel34.setText("Valor aproximado:  ");
+
+        jTextField5QuintupleValor.setEditable(false);
+
+        jLabel35.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel35.setText("Estimación del error: ");
+
+        jTextField2QuintupleError.setEditable(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -570,7 +764,16 @@ public class Integral extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1IntegralQuintupleAproximar)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jButton1IntegralQuintupleAproximar)
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel34)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField5QuintupleValor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel35)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2QuintupleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextFieldIntegralQuintupleA)
@@ -605,7 +808,7 @@ public class Integral extends javax.swing.JFrame {
                                 .addComponent(jTextFieldIntegralQuintuplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addContainerGap(183, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -654,7 +857,13 @@ public class Integral extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jTextFieldIntegralQuintupleA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(83, 83, 83)
-                .addComponent(jButton1IntegralQuintupleAproximar)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1IntegralQuintupleAproximar)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel34)
+                        .addComponent(jTextField5QuintupleValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel35)
+                        .addComponent(jTextField2QuintupleError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
 
@@ -799,7 +1008,17 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -812,6 +1031,16 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTextField jTextField1SimpleValor;
+    private javax.swing.JTextField jTextField2CuadrupleError;
+    private javax.swing.JTextField jTextField2DobleError;
+    private javax.swing.JTextField jTextField2QuintupleError;
+    private javax.swing.JTextField jTextField2SimpleError;
+    private javax.swing.JTextField jTextField2TripleError;
+    private javax.swing.JTextField jTextField3DobleValor;
+    private javax.swing.JTextField jTextField5CuadrupleValor;
+    private javax.swing.JTextField jTextField5QuintupleValor;
+    private javax.swing.JTextField jTextField5TripleValor;
     private javax.swing.JTextField jTextFieldIntegralCuadrupleA;
     private javax.swing.JTextField jTextFieldIntegralCuadrupleB;
     private javax.swing.JTextField jTextFieldIntegralCuadrupleC;
@@ -855,105 +1084,105 @@ public class Integral extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
 private void formatearTextFields(){
-        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA);
-        restricted1.setOnlyNums(true);
+        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA,"./1234567890");
+//        restricted1.setOnlyNums(true);
         restricted1.setLimit(5);
-        RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB);
-        restricted2.setOnlyNums(true);
+        RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB,"./1234567890");
+//        restricted2.setOnlyNums(true);
         restricted2.setLimit(5);
        
    
-        RestrictedTextField restricted3 = new RestrictedTextField(this.jTextFieldIntegralDobleA);
-        restricted3.setOnlyNums(true);
+        RestrictedTextField restricted3 = new RestrictedTextField(this.jTextFieldIntegralDobleA,"./1234567890");
+//        restricted3.setOnlyNums(true);
         restricted3.setLimit(5);     
-        RestrictedTextField restricted4 = new RestrictedTextField(this.jTextFieldIntegralDobleB);
-        restricted4.setOnlyNums(true);
+        RestrictedTextField restricted4 = new RestrictedTextField(this.jTextFieldIntegralDobleB,"./1234567890");
+//        restricted4.setOnlyNums(true);
         restricted4.setLimit(5);  
-        RestrictedTextField restricted5 = new RestrictedTextField(this.jTextFieldIntegralDobleC);
-        restricted5.setOnlyNums(true);
+        RestrictedTextField restricted5 = new RestrictedTextField(this.jTextFieldIntegralDobleC,"./1234567890");
+//        restricted5.setOnlyNums(true);
         restricted5.setLimit(5);      
-        RestrictedTextField restricted6 = new RestrictedTextField(this.jTextFieldIntegralDobleD);
-        restricted6.setOnlyNums(true);
+        RestrictedTextField restricted6 = new RestrictedTextField(this.jTextFieldIntegralDobleD,"./1234567890");
+//        restricted6.setOnlyNums(true);
         restricted6.setLimit(5);
 
 
-        RestrictedTextField restricted7 = new RestrictedTextField(this.jTextFieldIntegralTripleA);
-        restricted7.setOnlyNums(true);
+        RestrictedTextField restricted7 = new RestrictedTextField(this.jTextFieldIntegralTripleA,"./1234567890");
+//        restricted7.setOnlyNums(true);
         restricted7.setLimit(5); 
-        RestrictedTextField restricted8 = new RestrictedTextField(this.jTextFieldIntegralTripleB);
-        restricted8.setOnlyNums(true);
+        RestrictedTextField restricted8 = new RestrictedTextField(this.jTextFieldIntegralTripleB,"./1234567890");
+//        restricted8.setOnlyNums(true);
         restricted8.setLimit(5);
-        RestrictedTextField restricted9 = new RestrictedTextField(this.jTextFieldIntegralTripleC);
-        restricted9.setOnlyNums(true);
+        RestrictedTextField restricted9 = new RestrictedTextField(this.jTextFieldIntegralTripleC,"./1234567890");
+//        restricted9.setOnlyNums(true);
         restricted9.setLimit(5);
-        RestrictedTextField restricted10 = new RestrictedTextField(this.jTextFieldIntegralTripleD);
-        restricted10.setOnlyNums(true);
+        RestrictedTextField restricted10 = new RestrictedTextField(this.jTextFieldIntegralTripleD,"./1234567890");
+//        restricted10.setOnlyNums(true);
         restricted10.setLimit(5);
-        RestrictedTextField restricted11 = new RestrictedTextField(this.jTextFieldIntegralTripleE);
-        restricted11.setOnlyNums(true);
+        RestrictedTextField restricted11 = new RestrictedTextField(this.jTextFieldIntegralTripleE,"./1234567890");
+//        restricted11.setOnlyNums(true);
         restricted11.setLimit(5);
-        RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF);
-        restricted12.setOnlyNums(true);
+        RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF,"./1234567890");
+//        restricted12.setOnlyNums(true);
         restricted12.setLimit(5);
 
 
 
-        RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA);
-        restricted13.setOnlyNums(true);
+        RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA,"./1234567890");
+//        restricted13.setOnlyNums(true);
         restricted13.setLimit(5); 
-        RestrictedTextField restricted14 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleB);
-        restricted14.setOnlyNums(true);
+        RestrictedTextField restricted14 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleB,"./1234567890");
+//        restricted14.setOnlyNums(true);
         restricted14.setLimit(5);
-        RestrictedTextField restricted15 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleC);
-        restricted15.setOnlyNums(true);
+        RestrictedTextField restricted15 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleC,"./1234567890");
+//        restricted15.setOnlyNums(true);
         restricted15.setLimit(5);
-        RestrictedTextField restricted16 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleD);
-        restricted16.setOnlyNums(true);
+        RestrictedTextField restricted16 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleD,"./1234567890");
+//        restricted16.setOnlyNums(true);
         restricted16.setLimit(5);
-        RestrictedTextField restricted17 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleE);
-        restricted17.setOnlyNums(true);
+        RestrictedTextField restricted17 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleE,"./1234567890");
+//        restricted17.setOnlyNums(true);
         restricted17.setLimit(5);
-        RestrictedTextField restricted18 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleF);
-        restricted18.setOnlyNums(true);
+        RestrictedTextField restricted18 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleF,"./1234567890");
+//        restricted18.setOnlyNums(true);
         restricted18.setLimit(5);
-         RestrictedTextField restricted19 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleG);
-        restricted19.setOnlyNums(true);
+         RestrictedTextField restricted19 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleG,"./1234567890");
+//        restricted19.setOnlyNums(true);
         restricted19.setLimit(5);
-        RestrictedTextField restricted20 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleH);
-        restricted20.setOnlyNums(true);
+        RestrictedTextField restricted20 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleH,"./1234567890");
+//        restricted20.setOnlyNums(true);
         restricted20.setLimit(5);
 
 
         
-        RestrictedTextField restrictedq = new RestrictedTextField(this.jTextFieldIntegralQuintupleA);
-        restrictedq.setOnlyNums(true);
+        RestrictedTextField restrictedq = new RestrictedTextField(this.jTextFieldIntegralQuintupleA,"./1234567890");
+//        restrictedq.setOnlyNums(true);
         restrictedq.setLimit(5);
-        RestrictedTextField restrictedw = new RestrictedTextField(this.jTextFieldIntegralQuintupleB);
-        restrictedw.setOnlyNums(true);
+        RestrictedTextField restrictedw = new RestrictedTextField(this.jTextFieldIntegralQuintupleB,"./1234567890");
+//        restrictedw.setOnlyNums(true);
         restrictedw.setLimit(5);
-        RestrictedTextField restrictede = new RestrictedTextField(this.jTextFieldIntegralQuintupleC);
-        restrictede.setOnlyNums(true);
+        RestrictedTextField restrictede = new RestrictedTextField(this.jTextFieldIntegralQuintupleC,"./1234567890");
+//        restrictede.setOnlyNums(true);
         restrictede.setLimit(5);
-        RestrictedTextField restrictedr = new RestrictedTextField(this.jTextFieldIntegralQuintupleD);
-        restrictedr.setOnlyNums(true);
+        RestrictedTextField restrictedr = new RestrictedTextField(this.jTextFieldIntegralQuintupleD,"./1234567890");
+//        restrictedr.setOnlyNums(true);
         restrictedr.setLimit(5);
-        RestrictedTextField restrictedt = new RestrictedTextField(this.jTextFieldIntegralQuintupleE);
-        restrictedt.setOnlyNums(true);
+        RestrictedTextField restrictedt = new RestrictedTextField(this.jTextFieldIntegralQuintupleE,"./1234567890");
+//        restrictedt.setOnlyNums(true);
         restrictedt.setLimit(5);
-        RestrictedTextField restrictedy = new RestrictedTextField(this.jTextFieldIntegralQuintupleF);
-        restrictedy.setOnlyNums(true);
+        RestrictedTextField restrictedy = new RestrictedTextField(this.jTextFieldIntegralQuintupleF,"./1234567890");
+//        restrictedy.setOnlyNums(true);
         restrictedy.setLimit(5);
-        RestrictedTextField restrictedu = new RestrictedTextField(this.jTextFieldIntegralQuintupleG);
-        restrictedu.setOnlyNums(true);
+        RestrictedTextField restrictedu = new RestrictedTextField(this.jTextFieldIntegralQuintupleG,"./1234567890");
+//        restrictedu.setOnlyNums(true);
         restrictedu.setLimit(5);
-        RestrictedTextField restrictedi = new RestrictedTextField(this.jTextFieldIntegralQuintupleH);
-        restrictedi.setOnlyNums(true);
+        RestrictedTextField restrictedi = new RestrictedTextField(this.jTextFieldIntegralQuintupleH,"./1234567890");
+//        restrictedi.setOnlyNums(true);
         restrictedi.setLimit(5);
-        RestrictedTextField restrictedo = new RestrictedTextField(this.jTextFieldIntegralQuintupleI);
-        restrictedo.setOnlyNums(true);
+        RestrictedTextField restrictedo = new RestrictedTextField(this.jTextFieldIntegralQuintupleI,"./1234567890");
+//        restrictedo.setOnlyNums(true);
         restrictedo.setLimit(5);
-        RestrictedTextField restrictedp = new RestrictedTextField(this.jTextFieldIntegralQuintupleJ);
-        restrictedp.setOnlyNums(true);
+        RestrictedTextField restrictedp = new RestrictedTextField(this.jTextFieldIntegralQuintupleJ,"./1234567890");
+//        restrictedp.setOnlyNums(true);
         restrictedp.setLimit(5);
 
         RestrictedTextField restricteds = new RestrictedTextField(this.jTextFieldIntegralSimplePuntos);
@@ -968,8 +1197,8 @@ private void formatearTextFields(){
         RestrictedTextField restrictedg = new RestrictedTextField(this.jTextFieldIntegralCuadruplePuntos);
         restrictedg.setOnlyNums(true);
         restrictedg.setLimit(5);
-        RestrictedTextField restrictedh = new RestrictedTextField(this.jTextFieldIntegralQuintuplePuntos,".1234567890");
-//        restrictedh.setOnlyNums(true);
+        RestrictedTextField restrictedh = new RestrictedTextField(this.jTextFieldIntegralQuintuplePuntos);
+        restrictedh.setOnlyNums(true);
         restrictedh.setLimit(15);
 }
 
