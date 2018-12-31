@@ -25,7 +25,7 @@ public class Integral extends javax.swing.JFrame {
         this.jLabelEvaluando3.setText("");
         this.jLabelEvaluando4.setText("");
         this.jLabelEvaluando5.setText("");
-        
+
         this.jLabelEvaluando1.setVisible(false);
         this.jLabelEvaluando2.setVisible(false);
         this.jLabelEvaluando3.setVisible(false);
@@ -457,6 +457,11 @@ public class Integral extends javax.swing.JFrame {
 
         jButton1IntegralTripleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralTripleAproximar.setText("Aproximar");
+        jButton1IntegralTripleAproximar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1IntegralTripleAproximarActionPerformed(evt);
+            }
+        });
 
         jLabel30.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel30.setText("Valor aproximado:  ");
@@ -626,6 +631,11 @@ public class Integral extends javax.swing.JFrame {
 
         jButton1IntegralCuadrupleAproximar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton1IntegralCuadrupleAproximar.setText("Aproximar");
+        jButton1IntegralCuadrupleAproximar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1IntegralCuadrupleAproximarActionPerformed(evt);
+            }
+        });
 
         jLabel32.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel32.setText("Valor aproximado:  ");
@@ -1034,16 +1044,24 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1IntegralSimpleAproximarActionPerformed
 
     private void jButton1IntegralQuintupleAproximarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralQuintupleAproximarActionPerformed
-        // TODO add your handling code here:
+        aproxQuintuple();
     }//GEN-LAST:event_jButton1IntegralQuintupleAproximarActionPerformed
 
     private void jButton1IntegralDobleAproximarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralDobleAproximarActionPerformed
-        // TODO add your handling code here:
+        aproxDoble();
     }//GEN-LAST:event_jButton1IntegralDobleAproximarActionPerformed
 
     private void jButton1IntegralSimpleAproximarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1IntegralSimpleAproximarMouseClicked
 
     }//GEN-LAST:event_jButton1IntegralSimpleAproximarMouseClicked
+
+    private void jButton1IntegralTripleAproximarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralTripleAproximarActionPerformed
+        aproxTriple();
+    }//GEN-LAST:event_jButton1IntegralTripleAproximarActionPerformed
+
+    private void jButton1IntegralCuadrupleAproximarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralCuadrupleAproximarActionPerformed
+        aproxCuadruple();
+    }//GEN-LAST:event_jButton1IntegralCuadrupleAproximarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1225,7 +1243,6 @@ public class Integral extends javax.swing.JFrame {
         RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF, "./1234567890");
 //        restricted12.setOnlyNums(true);
         restricted12.setLimit(5);
-
         RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA, "./1234567890");
 //        restricted13.setOnlyNums(true);
         restricted13.setLimit(5);
@@ -1300,33 +1317,178 @@ public class Integral extends javax.swing.JFrame {
     }
 
     private void aproxSimple() {
-        try{
-        String funcion = "";
-        double a = 0.0;
-        double b = 0.0;
-        int n = 0;
-        funcion = this.jTextFieldIntegralSimpleExpresion.getText();
-        a = Double.parseDouble(this.jTextFieldIntegralSimpleA.getText());
-        b = Double.parseDouble(this.jTextFieldIntegralSimpleB.getText());
-        n = Integer.parseInt(this.jTextFieldIntegralSimplePuntos.getText());
-        Respuesta r = new Respuesta();
-        r = im.monteCarloIntegralSimple(funcion, a, b, n);
-        this.jLabelEvaluando1.setText("Listo");
-        this.jTextField1SimpleValor.setText(r.getRespuesta());
-        this.jTextField2SimpleError.setText(r.getEstimacionError());
-        
-        }catch(ParseException e){
+        try {
+            String funcion = "";
+            double a = 0.0;
+            double b = 0.0;
+            int n = 0;
+            funcion = this.jTextFieldIntegralSimpleExpresion.getText();
+            a = Double.parseDouble(this.jTextFieldIntegralSimpleA.getText());
+            b = Double.parseDouble(this.jTextFieldIntegralSimpleB.getText());
+            n = Integer.parseInt(this.jTextFieldIntegralSimplePuntos.getText());
+            Respuesta r = new Respuesta();
+            r = im.monteCarloIntegralSimple(funcion, a, b, n);
+            this.jLabelEvaluando1.setText("Listo");
+            this.jTextField1SimpleValor.setText(r.getRespuesta());
+            this.jTextField2SimpleError.setText(r.getEstimacionError());
+        } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
-        }
-        catch(NumberFormatException e){
+        } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
             System.out.println("NumberFormatException: " + e.getMessage());
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
             System.out.println("Exception: " + e.getMessage());
         }
     }
-        
+
+    private void aproxDoble() {
+        try {
+            String funcion = "";
+            double a = 0.0;
+            double b = 0.0;
+            double c = 0.0;
+            double d = 0.0;
+            int n = 0;
+            funcion = this.jTextFieldIntegralDobleExpresion.getText();
+            a = Double.parseDouble(this.jTextFieldIntegralDobleA.getText());
+            b = Double.parseDouble(this.jTextFieldIntegralDobleB.getText());
+            c = Double.parseDouble(this.jTextFieldIntegralDobleC.getText());
+            d = Double.parseDouble(this.jTextFieldIntegralDobleD.getText());
+            n = Integer.parseInt(this.jTextFieldIntegralDoblePuntos.getText());
+            Respuesta r = new Respuesta();
+            r = im.monteCarloIntegralDoble(funcion, a, b, c, d, n);
+            this.jLabelEvaluando2.setText("Listo");
+            this.jTextField3DobleValor.setText(r.getRespuesta());
+            this.jTextField2DobleError.setText(r.getEstimacionError());
+        } catch (ParseException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("ParseException: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("NumberFormatException: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
+    private void aproxTriple() {
+        try {
+            String funcion = "";
+            double a = 0.0;
+            double b = 0.0;
+            double c = 0.0;
+            double d = 0.0;
+            double e = 0.0;
+            double f = 0.0;
+            int n = 0;
+            funcion = this.jTextFieldIntegralTripleExpresion.getText();
+            a = Double.parseDouble(this.jTextFieldIntegralTripleA.getText());
+            b = Double.parseDouble(this.jTextFieldIntegralTripleB.getText());
+            c = Double.parseDouble(this.jTextFieldIntegralTripleC.getText());
+            d = Double.parseDouble(this.jTextFieldIntegralTripleD.getText());
+            e = Double.parseDouble(this.jTextFieldIntegralTripleE.getText());
+            f = Double.parseDouble(this.jTextFieldIntegralTripleF.getText());
+            n = Integer.parseInt(this.jTextFieldIntegralTriplePuntos.getText());
+            Respuesta r = new Respuesta();
+            r = im.monteCarloIntegralTriple(funcion, a, b, c, d, e, f, n);
+            this.jLabelEvaluando3.setText("Listo");
+            this.jTextField5TripleValor.setText(r.getRespuesta());
+            this.jTextField2TripleError.setText(r.getEstimacionError());
+        } catch (ParseException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("ParseException: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("NumberFormatException: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
+    private void aproxCuadruple() {
+        try {
+            String funcion = "";
+            double a = 0.0;
+            double b = 0.0;
+            double c = 0.0;
+            double d = 0.0;
+            double e = 0.0;
+            double f = 0.0;
+            double g = 0.0;
+            double h = 0.0;
+            int n = 0;
+            funcion = this.jTextFieldIntegralCuadrupleExpresion.getText();
+            a = Double.parseDouble(this.jTextFieldIntegralCuadrupleA.getText());
+            b = Double.parseDouble(this.jTextFieldIntegralCuadrupleB.getText());
+            c = Double.parseDouble(this.jTextFieldIntegralCuadrupleC.getText());
+            d = Double.parseDouble(this.jTextFieldIntegralCuadrupleD.getText());
+            e = Double.parseDouble(this.jTextFieldIntegralCuadrupleE.getText());
+            f = Double.parseDouble(this.jTextFieldIntegralCuadrupleF.getText());
+            g = Double.parseDouble(this.jTextFieldIntegralCuadrupleG.getText());
+            h = Double.parseDouble(this.jTextFieldIntegralCuadrupleH.getText());
+            n = Integer.parseInt(this.jTextFieldIntegralCuadruplePuntos.getText());
+            Respuesta r = new Respuesta();
+            r = im.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
+            this.jLabelEvaluando4.setText("Listo");
+            this.jTextField5CuadrupleValor.setText(r.getRespuesta());
+            this.jTextField2CuadrupleError.setText(r.getEstimacionError());
+        } catch (ParseException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("ParseException: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("NumberFormatException: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
+    private void aproxQuintuple() {
+        try {
+            String funcion = "";
+            double a = 0.0;
+            double b = 0.0;
+            double c = 0.0;
+            double d = 0.0;
+            double e = 0.0;
+            double f = 0.0;
+            double g = 0.0;
+            double h = 0.0;
+            double i = 0.0;
+            double j = 0.0;
+            int n = 0;
+            funcion = this.jTextFieldIntegralQuintupleExpresion.getText();
+            a = Double.parseDouble(this.jTextFieldIntegralQuintupleA.getText());
+            b = Double.parseDouble(this.jTextFieldIntegralQuintupleB.getText());
+            c = Double.parseDouble(this.jTextFieldIntegralQuintupleC.getText());
+            d = Double.parseDouble(this.jTextFieldIntegralQuintupleD.getText());
+            e = Double.parseDouble(this.jTextFieldIntegralQuintupleE.getText());
+            f = Double.parseDouble(this.jTextFieldIntegralQuintupleF.getText());
+            g = Double.parseDouble(this.jTextFieldIntegralQuintupleG.getText());
+            h = Double.parseDouble(this.jTextFieldIntegralQuintupleH.getText());
+            i = Double.parseDouble(this.jTextFieldIntegralQuintupleI.getText());
+            j = Double.parseDouble(this.jTextFieldIntegralQuintupleJ.getText());
+            n = Integer.parseInt(this.jTextFieldIntegralQuintuplePuntos.getText());
+            Respuesta r = new Respuesta();
+            r = im.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
+            this.jLabelEvaluando5.setText("Listo");
+            this.jTextField5QuintupleValor.setText(r.getRespuesta());
+            this.jTextField2QuintupleError.setText(r.getEstimacionError());
+        } catch (ParseException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("ParseException: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("NumberFormatException: " + e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el ingreso de datos", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
 }

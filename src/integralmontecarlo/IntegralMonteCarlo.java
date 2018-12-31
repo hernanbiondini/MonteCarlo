@@ -1,5 +1,7 @@
 package integralmontecarlo;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.nfunk.jep.ParseException;
 
 /**
@@ -194,7 +196,12 @@ public class IntegralMonteCarlo {
         double j = 1.1; // 11/10
         int n = 1000000;
         MonteCarlo mc = new MonteCarlo();
-        mc.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
+        try {
+            mc.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
+        } catch (Exception ex) {
+            Logger.getLogger(IntegralMonteCarlo.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
 }
