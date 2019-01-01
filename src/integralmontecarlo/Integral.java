@@ -145,6 +145,11 @@ public class Integral extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jTextField2QuintupleError = new javax.swing.JTextField();
         jLabelEvaluando5 = new javax.swing.JLabel();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jPanel6 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jButton1IntegralSimpleAproximar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Aproximación de Integrales por método de Monte Carlo");
@@ -208,7 +213,20 @@ public class Integral extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextFieldIntegralSimpleA)
+                            .addComponent(jTextFieldIntegralSimpleB)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldIntegralSimpleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelEvaluando1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jButton1IntegralSimpleAproximar)
                         .addGap(52, 52, 52)
@@ -219,25 +237,12 @@ public class Integral extends javax.swing.JFrame {
                         .addComponent(jLabel36)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField2SimpleError, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextFieldIntegralSimpleA)
-                            .addComponent(jTextFieldIntegralSimpleB)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextFieldIntegralSimpleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextFieldIntegralSimplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabelEvaluando1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(344, Short.MAX_VALUE))
+                        .addComponent(jTextFieldIntegralSimplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(401, 401, 401)))
+                .addContainerGap(395, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,10 +367,10 @@ public class Integral extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel22)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextFieldIntegralDoblePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextFieldIntegralDoblePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(344, Short.MAX_VALUE))
+                .addContainerGap(395, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -516,11 +521,11 @@ public class Integral extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(271, 271, 271)
+                                .addGap(225, 225, 225)
                                 .addComponent(jLabel23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextFieldIntegralTriplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(344, Short.MAX_VALUE))
+                                .addComponent(jTextFieldIntegralTriplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(395, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -694,10 +699,10 @@ public class Integral extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel24)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextFieldIntegralCuadruplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextFieldIntegralCuadruplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -887,16 +892,18 @@ public class Integral extends javax.swing.JFrame {
                             .addComponent(jTextFieldIntegralQuintupleI)
                             .addComponent(jTextFieldIntegralQuintupleJ)
                             .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextFieldIntegralQuintupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(220, 220, 220)
                                 .addComponent(jLabel25)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextFieldIntegralQuintuplePuntos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextFieldIntegralQuintuplePuntos))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addGap(18, 18, Short.MAX_VALUE)
+                                .addComponent(jTextFieldIntegralQuintupleExpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addGap(234, 234, 234))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -959,21 +966,67 @@ public class Integral extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Integral quíntuple", jPanel4);
 
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1248, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbedPane3.addTab("Históricos", jPanel6);
+
+        jButton1IntegralSimpleAproximar1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton1IntegralSimpleAproximar1.setText("Limpiar");
+        jButton1IntegralSimpleAproximar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1IntegralSimpleAproximar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane2)
-                .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTabbedPane2)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTabbedPane3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1IntegralSimpleAproximar1)
+                        .addGap(7, 7, 7))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jButton1IntegralSimpleAproximar1)))
+                .addContainerGap())
         );
 
         pack();
@@ -1063,6 +1116,10 @@ public class Integral extends javax.swing.JFrame {
         aproxCuadruple();
     }//GEN-LAST:event_jButton1IntegralCuadrupleAproximarActionPerformed
 
+    private void jButton1IntegralSimpleAproximar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralSimpleAproximar1ActionPerformed
+       jTextArea1.setText("");
+    }//GEN-LAST:event_jButton1IntegralSimpleAproximar1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1103,6 +1160,7 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JButton jButton1IntegralDobleAproximar;
     private javax.swing.JButton jButton1IntegralQuintupleAproximar;
     private javax.swing.JButton jButton1IntegralSimpleAproximar;
+    private javax.swing.JButton jButton1IntegralSimpleAproximar1;
     private javax.swing.JButton jButton1IntegralTripleAproximar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1150,7 +1208,11 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1SimpleValor;
     private javax.swing.JTextField jTextField2CuadrupleError;
     private javax.swing.JTextField jTextField2DobleError;
@@ -1331,6 +1393,7 @@ public class Integral extends javax.swing.JFrame {
             this.jLabelEvaluando1.setText("Listo");
             this.jTextField1SimpleValor.setText(r.getRespuesta());
             this.jTextField2SimpleError.setText(r.getEstimacionError());
+            this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -1362,6 +1425,7 @@ public class Integral extends javax.swing.JFrame {
             this.jLabelEvaluando2.setText("Listo");
             this.jTextField3DobleValor.setText(r.getRespuesta());
             this.jTextField2DobleError.setText(r.getEstimacionError());
+            this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -1397,6 +1461,7 @@ public class Integral extends javax.swing.JFrame {
             this.jLabelEvaluando3.setText("Listo");
             this.jTextField5TripleValor.setText(r.getRespuesta());
             this.jTextField2TripleError.setText(r.getEstimacionError());
+            this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -1436,6 +1501,7 @@ public class Integral extends javax.swing.JFrame {
             this.jLabelEvaluando4.setText("Listo");
             this.jTextField5CuadrupleValor.setText(r.getRespuesta());
             this.jTextField2CuadrupleError.setText(r.getEstimacionError());
+            this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -1479,6 +1545,7 @@ public class Integral extends javax.swing.JFrame {
             this.jLabelEvaluando5.setText("Listo");
             this.jTextField5QuintupleValor.setText(r.getRespuesta());
             this.jTextField2QuintupleError.setText(r.getEstimacionError());
+            this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
