@@ -1117,7 +1117,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1IntegralCuadrupleAproximarActionPerformed
 
     private void jButton1IntegralSimpleAproximar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1IntegralSimpleAproximar1ActionPerformed
-       jTextArea1.setText("");
+        jTextArea1.setText("");
     }//GEN-LAST:event_jButton1IntegralSimpleAproximar1ActionPerformed
 
     /**
@@ -1267,7 +1267,7 @@ public class Integral extends javax.swing.JFrame {
     private MonteCarlo im;
 
     private void formatearTextFields() {
-        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA, "./1234567890");
+        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA, "./eπ1234567890");
 //        restricted1.setOnlyNums(true);
         restricted1.setLimit(5);
         RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB, "./1234567890");
@@ -1385,7 +1385,10 @@ public class Integral extends javax.swing.JFrame {
             double b = 0.0;
             int n = 0;
             funcion = this.jTextFieldIntegralSimpleExpresion.getText();
-            a = Double.parseDouble(this.jTextFieldIntegralSimpleA.getText());
+            
+            a = valorParametro(this.jTextFieldIntegralSimpleA.getText());
+                    
+            //a = Double.parseDouble(this.jTextFieldIntegralSimpleA.getText());
             b = Double.parseDouble(this.jTextFieldIntegralSimpleB.getText());
             n = Integer.parseInt(this.jTextFieldIntegralSimplePuntos.getText());
             Respuesta r = new Respuesta();
@@ -1558,4 +1561,20 @@ public class Integral extends javax.swing.JFrame {
         }
     }
 
+    private double valorParametro(String valor) throws NumberFormatException{
+        double resultado = 0.0;
+        boolean cambio = false;
+        if (valor.equals("e") == false) {
+            resultado = 2.718281828459045;
+            cambio = true;
+        }
+        if (valor.equals("π") == false) {
+            resultado = 3.141592653589793;
+            cambio = true;
+        }
+        if (!cambio) {
+            resultado = Double.parseDouble(valor);
+        }
+        return resultado;
+    }
 }
