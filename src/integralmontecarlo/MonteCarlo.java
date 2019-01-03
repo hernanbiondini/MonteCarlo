@@ -25,9 +25,8 @@ public class MonteCarlo {
         p.configuracion_1();
         p.agregarVariable("x", 0);
 
-        funcion = funcion.replace("π", "pi");
-        funcion = funcion.replace("√", "sqrt");
-        
+        funcion = cambiarSimbolos(funcion);
+
         resultadoParseo = p.parsearExpresion(funcion);
 
         ti = System.currentTimeMillis();
@@ -76,9 +75,8 @@ public class MonteCarlo {
         p.agregarVariable("x", 0);
         p.agregarVariable("y", 0);
 
-        funcion = funcion.replace("π", "pi");
-        funcion = funcion.replace("√", "sqrt");
-        
+        funcion = cambiarSimbolos(funcion);
+
         resultadoParseo = p.parsearExpresion(funcion);
 
         ti = System.currentTimeMillis();
@@ -132,9 +130,8 @@ public class MonteCarlo {
         p.agregarVariable("y", 0);
         p.agregarVariable("z", 0);
 
-        funcion = funcion.replace("π", "pi");
-        funcion = funcion.replace("√", "sqrt");
-        
+        funcion = cambiarSimbolos(funcion);
+
         resultadoParseo = p.parsearExpresion(funcion);
 
         ti = System.currentTimeMillis();
@@ -192,9 +189,8 @@ public class MonteCarlo {
         p.agregarVariable("z", 0);
         p.agregarVariable("u", 0);
 
-        funcion = funcion.replace("π", "pi");
-        funcion = funcion.replace("√", "sqrt");
-        
+        funcion = cambiarSimbolos(funcion);
+
         resultadoParseo = p.parsearExpresion(funcion);
 
         ti = System.currentTimeMillis();
@@ -256,9 +252,8 @@ public class MonteCarlo {
         p.agregarVariable("u", 0);
         p.agregarVariable("w", 0);
 
-        funcion = funcion.replace("π", "pi");
-        funcion = funcion.replace("√", "sqrt");
-        
+        funcion = cambiarSimbolos(funcion);
+
         resultadoParseo = p.parsearExpresion(funcion);
 
         ti = System.currentTimeMillis();
@@ -307,6 +302,13 @@ public class MonteCarlo {
         }
 
         return r;
+    }
+
+    private String cambiarSimbolos(String funcion) {
+        String fun = "";
+        fun = funcion.replace("π", "pi");
+        fun = fun.replace("√", "sqrt");
+        return fun;
     }
 
 }
