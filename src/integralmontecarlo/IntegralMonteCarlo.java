@@ -38,12 +38,12 @@ public class IntegralMonteCarlo {
 //        }
 
 
-String funcion = "x";
-double a = 0;
-double b = 1;
-int n = 1000;
-MonteCarlo mc = new MonteCarlo();
-mc.monteCarloIntegralSimple(funcion, a, b, n);
+//String funcion = "√(x)+(1*3)";
+//double a = 0;
+//double b = 1;
+//int n = 1000;
+//MonteCarlo mc = new MonteCarlo();
+//mc.monteCarloIntegralSimple(funcion, a, b, n);
 
 
 //        String funcion = "sin(x) + 1/3 sin(3x)";
@@ -89,14 +89,14 @@ mc.monteCarloIntegralSimple(funcion, a, b, n);
 //        mc.monteCarloIntegralDoble(funcion, a, b, c, d, n);
 
 
-//        String funcion = " x^(2) + y^(2)";
-//        double a = 0;
-//        double b = 1;
-//        double c = 0;
-//        double d = 1;
-//        int n = 5000;
-//        MonteCarlo mc = new MonteCarlo();
-//        mc.monteCarloIntegralDoble(funcion, a, b, c, d, n);
+        String funcion = " √(x)+(1*3)+y^(2)+π+e^x";
+        double a = 0;
+        double b = 3;
+        double c = 0;
+        double d = 1;
+        int n = 5000;
+        MonteCarlo mc = new MonteCarlo();
+        mc.monteCarloIntegralDoble(funcion, a, b, c, d, n);
 
 
 //        String funcion = " 2 x y";
