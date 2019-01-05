@@ -5,12 +5,6 @@
  */
 package integralmontecarlo;
 
-import javax.swing.UIManager;
-import javax.swing.text.Caret;
-import javax.swing.text.DefaultCaret;
-import javax.swing.text.DefaultHighlighter;
-import javax.swing.text.Highlighter;
-
 /**
  *
  * @author hernan
@@ -21,7 +15,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     public NewJFrame() {
         initComponents();
-        // jTextField1.setCaret(new HighlightCaret());
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -44,7 +38,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton31 = new javax.swing.JButton();
@@ -57,6 +50,9 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jButton35 = new javax.swing.JButton();
+        jButton36 = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jButton18 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
@@ -153,13 +149,6 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton29.setText("_");
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
-            }
-        });
-
         jButton30.setText("<<");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,12 +164,32 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton31.setText("u");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
 
         jButton32.setText("z");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
 
         jButton33.setText("y");
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
 
         jButton34.setText("x");
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -202,13 +211,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jButton11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton29)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(27, 27, 27)
                 .addComponent(jButton13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton30)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton31)
@@ -232,7 +239,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jButton15)
                 .addComponent(jButton16)
                 .addComponent(jButton17)
-                .addComponent(jButton29)
                 .addComponent(jButton30)
                 .addComponent(jButton1)
                 .addComponent(jButton31)
@@ -278,6 +284,27 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton35.setText("arcsen");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+
+        jButton36.setText("arccos");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
+
+        jButton37.setText("arctan");
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -292,10 +319,20 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton37)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jButton35)
+                .addComponent(jButton36)
+                .addComponent(jButton37))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jButton7)
                 .addComponent(jButton4)
@@ -567,10 +604,10 @@ public class NewJFrame extends javax.swing.JFrame {
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "cos" + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             } else {
                 cadena = cadena + "cos";
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             }
         }
         this.jTextField1.setText(cadena);
@@ -586,10 +623,10 @@ public class NewJFrame extends javax.swing.JFrame {
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "ln" + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
+                posicion = posicion + 2;
             } else {
                 cadena = cadena + "ln";
-                posicion = posicion + 1;
+                posicion = posicion + 2;
             }
         }
         this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton10ActionPerformed
@@ -669,38 +706,24 @@ public class NewJFrame extends javax.swing.JFrame {
         this.jTextField1.setText(cadena);
     }//GEN-LAST:event_jButton27ActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        posicion = jTextField1.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
-        String cadena = this.jTextField1.getText();
-        if (posicion == 0) {
-            cadena = cadena + " ";
-            //posicion = posicion + 1;
-        } else {
-            if (cadena.length() > 1) {
-                cadena = cadena.substring(0, posicion) + " " + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
-            } else {
-                cadena = cadena + " ";
-                posicion = posicion + 1;
-            }
-        }
-        this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton29ActionPerformed
-
     private void jTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusLost
         posicion = jTextField1.getCaretPosition();
         System.out.println("FocusLost - posicion: " + posicion);
     }//GEN-LAST:event_jTextField1FocusLost
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        posicion = jTextField1.getCaretPosition();
         String cadena = this.jTextField1.getText();
         if (posicion == 0) {
             cadena = cadena + "0";
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+
             } else {
                 cadena = cadena + "0";
+                posicion = posicion + 1;
             }
         }
         this.jTextField1.setText(cadena);
@@ -898,10 +921,10 @@ public class NewJFrame extends javax.swing.JFrame {
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "log" + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             } else {
                 cadena = cadena + "log";
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             }
         }
         this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton9ActionPerformed
@@ -943,26 +966,6 @@ public class NewJFrame extends javax.swing.JFrame {
         this.jTextField1.setText(cadena);
     }//GEN-LAST:event_jButton12ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        String cadena = this.jTextField1.getText().trim();
-        if (cadena.length() > 0) {
-            if (posicion == 0) {
-
-                if (cadena.length() > 0) {
-                    cadena = cadena.substring(0, cadena.length() - 1);
-                }
-            } else {
-                if (cadena.length() > 2) {
-                    cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
-
-                } else {
-                    cadena = cadena.substring(0, cadena.length() - 1);
-                }
-                posicion = posicion - 1;
-            }
-            this.jTextField1.setText(cadena);
-        }    }//GEN-LAST:event_jButton13ActionPerformed
-
     private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
         posicion = jTextField1.getCaretPosition();
         System.out.println("FocusGained - posicion: " + posicion);
@@ -978,21 +981,36 @@ public class NewJFrame extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextField1.getText();
         if (posicion == 0) {
-            cadena = cadena + "sin";
+            cadena = cadena + "sen";
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
-                cadena = cadena.substring(0, posicion) + "sin" + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
+                cadena = cadena.substring(0, posicion) + "sen" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
             } else {
-                cadena = cadena + "sin";
-                posicion = posicion + 1;
+                cadena = cadena + "sen";
+                posicion = posicion + 3;
             }
         }
         this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "w";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "w" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "w";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextField1.setText(cadena);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -1005,52 +1023,195 @@ public class NewJFrame extends javax.swing.JFrame {
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "tan" + cadena.substring(posicion, cadena.length());
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             } else {
                 cadena = cadena + "tan";
-                posicion = posicion + 1;
+                posicion = posicion + 3;
             }
         }
         this.jTextField1.setText(cadena);
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    //javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    // select Look and Feel
-                    //UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
-                    UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
-                    break;
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "u";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "u" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "u";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextField1.setText(cadena);
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "z";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "z" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "z";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "y";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "y" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "y";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "x";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "x" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "x";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextField1.setText(cadena);    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        String cadena = this.jTextField1.getText().trim();
+        System.out.println("cadena.length(): " + cadena.length());
+        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
+
+        if (cadena.length() > 0) {
+            char charPosi = cadena.charAt(cadena.length() - 1);
+            System.out.println("charPosi: " + charPosi);
+            if (posicion == 0) {
+                System.out.println("1111111111111111111111111111");
+                if (cadena.length() > 0) {
+                    System.out.println("222222222222222");
+
+                    cadena = cadena.substring(0, cadena.length() - 1);
+                    posicion = posicion - 2;
+                    if (posicion < 0) {
+                        posicion = 0;
+                    }
+
+                }
+            } else {
+                System.out.println("333333333333333333333");
+
+                if (cadena.length() > 2) {
+                    System.out.println("444444444444444");
+
+                    cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
+                    posicion = posicion - 2;
+                    if (posicion < 0) {
+                        posicion = 0;
+                    }
+
+                } else {
+                    cadena = cadena.substring(0, cadena.length() - 1);
+                    System.out.println("444444444444444444444444444");
+
+                }
+                posicion = posicion - 2;
+                if (posicion < 0) {
+                    posicion = 0;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NewJFrame().setVisible(true);
-            }
-        });
+            this.jTextField1.setText(cadena);
+        } else {
+            posicion = 0;
+    }//GEN-LAST:event_jButton13ActionPerformed
     }
+
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arcsen";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arcsen" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arcsen";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextField1.setText(cadena);
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arccos";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arccos" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arccos";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextField1.setText(cadena);
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        posicion = jTextField1.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextField1.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arctan";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arctan" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arctan";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextField1.setText(cadena);
+    }//GEN-LAST:event_jButton37ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -1074,13 +1235,15 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
     private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -1092,4 +1255,14 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    public static void main(String args[]) {
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new NewJFrame().setVisible(true);
+            }
+        });
+    }
+
 }

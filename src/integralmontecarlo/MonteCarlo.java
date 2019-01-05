@@ -300,7 +300,6 @@ public class MonteCarlo {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
         }
-
         return r;
     }
 
@@ -308,6 +307,7 @@ public class MonteCarlo {
         String fun = "";
         fun = funcion.replace("π", "pi");
         fun = fun.replace("√", "sqrt");
+        fun = fun.replace("sen", "sin");
         return fun;
     }
 

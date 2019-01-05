@@ -4,6 +4,8 @@ import Atxy2k.CustomTextField.RestrictedTextField;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import org.nfunk.jep.ParseException;
 
 /**
@@ -1124,28 +1126,33 @@ public class Integral extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.luna.LunaLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.bernstein.BernsteinLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.aerp.AeroLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.aero.AeroLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
+            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
+
+
+
+
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Integral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Integral.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Integral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Integral.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Integral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Integral.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Integral.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(Integral.class.getName()).log(Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1385,9 +1392,9 @@ public class Integral extends javax.swing.JFrame {
             double b = 0.0;
             int n = 0;
             funcion = this.jTextFieldIntegralSimpleExpresion.getText();
-            
+
             a = valorParametro(this.jTextFieldIntegralSimpleA.getText());
-                    
+
             //a = Double.parseDouble(this.jTextFieldIntegralSimpleA.getText());
             b = Double.parseDouble(this.jTextFieldIntegralSimpleB.getText());
             n = Integer.parseInt(this.jTextFieldIntegralSimplePuntos.getText());
@@ -1561,7 +1568,7 @@ public class Integral extends javax.swing.JFrame {
         }
     }
 
-    private double valorParametro(String valor) throws NumberFormatException{
+    private double valorParametro(String valor) throws NumberFormatException {
         double resultado = 0.0;
         boolean cambio = false;
         if (valor.equals("e") == false) {
