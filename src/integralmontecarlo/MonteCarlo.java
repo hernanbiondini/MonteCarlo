@@ -53,9 +53,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral simple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral simple: " + funcion + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral simple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral simple: " + funcion + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -107,9 +107,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral doble: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral doble: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral doble: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral doble: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -165,9 +165,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral triple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral triple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral triple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "   Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral triple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "   Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -227,8 +227,8 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral cuádruple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
-            System.out.println("\nIntegral cuádruple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h +"]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral cuádruple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -293,9 +293,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral quíntuple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral quíntuple: '" + funcion + "'  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral quíntuple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);

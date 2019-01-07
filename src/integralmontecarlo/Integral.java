@@ -3418,6 +3418,9 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        this.jTextFieldIntegralQuintuplePuntos.setText("");
+        this.jTextField5QuintupleValor.setText("");
+        this.jTextField2QuintupleError.setText("");
         this.jTextFieldIntegralQuintupleExpresion.setText("");
         this.posicion = 0;
     }//GEN-LAST:event_jButton30ActionPerformed
@@ -4468,16 +4471,15 @@ public class Integral extends javax.swing.JFrame {
         try {
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
-//            UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
+            UIManager.setLookAndFeel("com.jtattoo.plaf.noire.NoireLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.luna.LunaLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.bernstein.BernsteinLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.aerp.AeroLookAndFeel");
-//            UIManager.setLookAndFeel("com.jtattoo.plaf.aero.AeroLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.aluminium.AluminiumLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
 //            UIManager.setLookAndFeel("com.jtattoo.plaf.texture.TextureLookAndFeel");
-            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
+//            UIManager.setLookAndFeel("com.jtattoo.plaf.mint.MintLookAndFeel");
 
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Integral.class.getName()).log(Level.SEVERE, null, ex);
