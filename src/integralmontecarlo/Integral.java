@@ -4608,139 +4608,646 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton72ActionPerformed
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "ln";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "ln" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 2;
+            } else {
+                cadena = cadena + "ln";
+                posicion = posicion + 2;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton73ActionPerformed
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton74ActionPerformed
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "log";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "log" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "log";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);    }//GEN-LAST:event_jButton74ActionPerformed
 
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "sen";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "sen" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "sen";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton75ActionPerformed
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "cos";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "cos" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "cos";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton76ActionPerformed
 
     private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "tan";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "tan" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "tan";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton77ActionPerformed
 
     private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arcsen";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arcsen" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arcsen";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton78ActionPerformed
 
     private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arccos";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arccos" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arccos";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton79ActionPerformed
 
     private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "arctan";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "arctan" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 3;
+            } else {
+                cadena = cadena + "arctan";
+                posicion = posicion + 3;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton80ActionPerformed
 
     private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "0";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "0";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton81ActionPerformed
 
     private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "1";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "1" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "1";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton82ActionPerformed
 
     private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "2";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "2" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "2";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton83ActionPerformed
 
     private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "3";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "3" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "3";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton84ActionPerformed
 
     private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "4";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "4" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "4";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton85ActionPerformed
 
     private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "5";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "5" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "5";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton86ActionPerformed
 
     private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "6";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "6" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "6";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton87ActionPerformed
 
     private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "7";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "7" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "7";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton88ActionPerformed
 
     private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "8";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "8" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "8";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton89ActionPerformed
 
     private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "9";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "9" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "9";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton90ActionPerformed
 
     private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton91ActionPerformed
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + ".";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "." + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + ".";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);    }//GEN-LAST:event_jButton91ActionPerformed
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton92ActionPerformed
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "π";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "π" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "π";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);    }//GEN-LAST:event_jButton92ActionPerformed
 
     private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "e";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "e" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "e";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton93ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "√";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "√" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "√";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton94ActionPerformed
 
     private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "^";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "^" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "^";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton95ActionPerformed
 
     private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "(";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "(" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "(";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton96ActionPerformed
 
     private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + ")";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + ")" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + ")";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton97ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText().trim();
+        System.out.println("cadena.length(): " + cadena.length());
+        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
+
+        if (cadena.length() > 0) {
+            char charPosi = cadena.charAt(cadena.length() - 1);
+            System.out.println("charPosi: " + charPosi);
+            if (posicion == 0) {
+                System.out.println("1111111111111111111111111111");
+                if (cadena.length() > 0) {
+                    System.out.println("222222222222222");
+
+                    cadena = cadena.substring(0, cadena.length() - 1);
+                    posicion = posicion - 2;
+                    if (posicion < 0) {
+                        posicion = 0;
+                    }
+
+                }
+            } else {
+                System.out.println("333333333333333333333");
+
+                if (cadena.length() > 2) {
+                    System.out.println("444444444444444");
+
+                    cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
+                    posicion = posicion - 2;
+                    if (posicion < 0) {
+                        posicion = 0;
+                    }
+
+                } else {
+                    cadena = cadena.substring(0, cadena.length() - 1);
+                    System.out.println("444444444444444444444444444");
+
+                }
+                posicion = posicion - 2;
+                if (posicion < 0) {
+                    posicion = 0;
+                }
+            }
+            this.jTextFieldIntegralTripleExpresion.setText(cadena);
+        } else {
+            posicion = 0;
+        }
     }//GEN-LAST:event_jButton98ActionPerformed
 
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
-        // TODO add your handling code here:
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "-";
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "-" + cadena.substring(posicion, cadena.length());
+            } else {
+                cadena = cadena + "-";
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton99ActionPerformed
 
     private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
-        // TODO add your handling code here:
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "*";
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "*" + cadena.substring(posicion, cadena.length());
+            } else {
+                cadena = cadena + "*";
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton100ActionPerformed
 
     private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
-        // TODO add your handling code here:
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "/";
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "/" + cadena.substring(posicion, cadena.length());
+            } else {
+                cadena = cadena + "/";
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton101ActionPerformed
 
     private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "+";
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
+            } else {
+                cadena = cadena + "+";
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton102ActionPerformed
 
     private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
-        // TODO add your handling code here:
+        this.jTextFieldIntegralTriplePuntos.setText("");
+        this.jTextField5TripleValor.setText("");
+        this.jTextField2TripleError.setText("");
+        this.jTextFieldIntegralTripleExpresion.setText("");
+        this.posicion = 0;
     }//GEN-LAST:event_jButton103ActionPerformed
 
     private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "z";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "z" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "z";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton105ActionPerformed
 
     private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "y";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "y" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "y";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton106ActionPerformed
 
     private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
-        // TODO add your handling code here:
+        posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
+        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        String cadena = this.jTextFieldIntegralTripleExpresion.getText();
+        if (posicion == 0) {
+            cadena = cadena + "x";
+            //posicion = posicion + 1;
+        } else {
+            if (cadena.length() > 1) {
+                cadena = cadena.substring(0, posicion) + "x" + cadena.substring(posicion, cadena.length());
+                posicion = posicion + 1;
+            } else {
+                cadena = cadena + "x";
+                posicion = posicion + 1;
+            }
+        }
+        this.jTextFieldIntegralTripleExpresion.setText(cadena);
     }//GEN-LAST:event_jButton107ActionPerformed
 
     private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
