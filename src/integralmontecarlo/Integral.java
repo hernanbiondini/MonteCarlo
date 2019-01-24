@@ -6159,9 +6159,10 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton164ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton164ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
+        System.out.println("posicion:" + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "√";
+            cadena = "√" + cadena ;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "√" + cadena.substring(posicion, cadena.length());
@@ -6220,30 +6221,18 @@ public class Integral extends javax.swing.JFrame {
     private void jButton168ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton168ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText().trim();
-        System.out.println("cadena.length(): " + cadena.length());
-        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
-
         if (cadena.length() > 0) {
             char charPosi = cadena.charAt(cadena.length() - 1);
-            System.out.println("charPosi: " + charPosi);
             if (posicion == 0) {
-                System.out.println("1111111111111111111111111111");
                 if (cadena.length() > 0) {
-                    System.out.println("222222222222222");
-
                     cadena = cadena.substring(0, cadena.length() - 1);
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 }
             } else {
-                System.out.println("333333333333333333333");
-
                 if (cadena.length() > 2) {
-                    System.out.println("444444444444444");
-
                     cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
                     posicion = posicion - 2;
                     if (posicion < 0) {
@@ -6252,8 +6241,6 @@ public class Integral extends javax.swing.JFrame {
 
                 } else {
                     cadena = cadena.substring(0, cadena.length() - 1);
-                    System.out.println("444444444444444444444444444");
-
                 }
                 posicion = posicion - 2;
                 if (posicion < 0) {
@@ -6335,7 +6322,6 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton173ActionPerformed
 
     private void jButton177ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton177ActionPerformed
-        // TODO add your handling code here: posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
