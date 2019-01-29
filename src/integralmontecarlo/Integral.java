@@ -3240,8 +3240,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "^";
-            //posicion = posicion + 1;
+            cadena = "^" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "^" + cadena.substring(posicion, cadena.length());
@@ -3259,7 +3258,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "(";
+            cadena = "(" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3279,8 +3278,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ")";
-            //posicion = posicion + 1;
+            cadena = ")" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + ")" + cadena.substring(posicion, cadena.length());
@@ -3296,17 +3294,10 @@ public class Integral extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText().trim();
-        System.out.println("cadena.length(): " + cadena.length());
-        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
-
         if (cadena.length() > 0) {
             char charPosi = cadena.charAt(cadena.length() - 1);
-            System.out.println("charPosi: " + charPosi);
             if (posicion == 0) {
-                System.out.println("1111111111111111111111111111");
                 if (cadena.length() > 0) {
-                    System.out.println("222222222222222");
-
                     cadena = cadena.substring(0, cadena.length() - 1);
                     posicion = posicion - 2;
                     if (posicion < 0) {
@@ -3315,21 +3306,14 @@ public class Integral extends javax.swing.JFrame {
 
                 }
             } else {
-                System.out.println("333333333333333333333");
-
                 if (cadena.length() > 2) {
-                    System.out.println("444444444444444");
-
                     cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 } else {
                     cadena = cadena.substring(0, cadena.length() - 1);
-                    System.out.println("444444444444444444444444444");
-
                 }
                 posicion = posicion - 2;
                 if (posicion < 0) {
@@ -3346,8 +3330,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "-";
-            //posicion = posicion + 1;
+            cadena = "-" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "-" + cadena.substring(posicion, cadena.length());
@@ -3366,8 +3349,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "*";
-            //posicion = posicion + 1;
+            cadena = "*" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "*" + cadena.substring(posicion, cadena.length());
@@ -3386,8 +3368,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "/";
-            //posicion = posicion + 1;
+            cadena = "/" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "/" + cadena.substring(posicion, cadena.length());
@@ -3405,7 +3386,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "+";
+            cadena = "+" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
@@ -3430,8 +3411,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "w";
-            //posicion = posicion + 1;
+            cadena = "w" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "w" + cadena.substring(posicion, cadena.length());
@@ -3449,8 +3429,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "u";
-            //posicion = posicion + 1;
+            cadena = "u" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "u" + cadena.substring(posicion, cadena.length());
@@ -3468,8 +3447,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "z";
-            //posicion = posicion + 1;
+            cadena = "z" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "z" + cadena.substring(posicion, cadena.length());
@@ -3488,8 +3466,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "y";
-            //posicion = posicion + 1;
+            cadena = "y" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "y" + cadena.substring(posicion, cadena.length());
@@ -3508,8 +3485,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "x";
-            //posicion = posicion + 1;
+            cadena = "x" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "x" + cadena.substring(posicion, cadena.length());
@@ -3527,7 +3503,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "0";
+            cadena = "0" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
@@ -3546,8 +3522,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "1";
-            //posicion = posicion + 1;
+            cadena = "1" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "1" + cadena.substring(posicion, cadena.length());
@@ -3565,8 +3540,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "2";
-            //posicion = posicion + 1;
+            cadena = "2" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "2" + cadena.substring(posicion, cadena.length());
@@ -3584,7 +3558,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "3";
+            cadena = "3" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3604,7 +3578,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "4";
+            cadena = "4" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3624,7 +3598,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "5";
+            cadena = "5" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3643,7 +3617,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "6";
+            cadena = "6" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3662,7 +3636,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "7";
+            cadena = "7" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3681,7 +3655,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "8";
+            cadena = "8" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3700,7 +3674,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "9";
+            cadena = "9" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3719,7 +3693,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ".";
+            cadena = "." + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3739,7 +3713,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "π";
+            cadena = "π" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3758,7 +3732,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "e";
+            cadena = "e" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3777,7 +3751,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "ln";
+            cadena = "ln" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3797,7 +3771,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "log";
+            cadena = "log" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3817,7 +3791,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "sen";
+            cadena = "sen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3837,7 +3811,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "cos";
+            cadena = "cos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3856,7 +3830,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "tan";
+            cadena = "tan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3875,7 +3849,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arcsen";
+            cadena = "arcsen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3894,7 +3868,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arccos";
+            cadena = "arccos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3913,7 +3887,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arctan";
+            cadena = "arctan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3932,7 +3906,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "ln";
+            cadena = "ln" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3951,7 +3925,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "log";
+            cadena = "log" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3970,7 +3944,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "sen";
+            cadena = "sen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -3989,7 +3963,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "cos";
+            cadena = "cos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4008,7 +3982,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "tan";
+            cadena = "tan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4027,7 +4001,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arcsen";
+            cadena = "arcsen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4046,7 +4020,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arccos";
+            cadena = "arccos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4065,7 +4039,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arctan";
+            cadena = "arctan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4083,7 +4057,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "0";
+            cadena = "0" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
@@ -4102,7 +4076,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "1";
+            cadena = "1"  + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4121,7 +4095,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "2";
+            cadena = "2" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4140,7 +4114,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "3";
+            cadena = "3" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4159,7 +4133,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "4";
+            cadena = "4" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4178,7 +4152,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "5";
+            cadena = "5" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4197,7 +4171,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "6";
+            cadena = "6" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4216,7 +4190,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "7";
+            cadena = "7" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4235,7 +4209,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "8";
+            cadena = "8" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4254,7 +4228,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "9";
+            cadena =  "9" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4273,7 +4247,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ".";
+            cadena = "." + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4292,7 +4266,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "π";
+            cadena = "π" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4311,7 +4285,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "e";
+            cadena = "e" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4330,7 +4304,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "√";
+            cadena = "√" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4349,7 +4323,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "^";
+            cadena = "^" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4368,7 +4342,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "(";
+            cadena = "(" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4387,7 +4361,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ")";
+            cadena = ")" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4404,40 +4378,25 @@ public class Integral extends javax.swing.JFrame {
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText().trim();
-        System.out.println("cadena.length(): " + cadena.length());
-        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
-
         if (cadena.length() > 0) {
             char charPosi = cadena.charAt(cadena.length() - 1);
-            System.out.println("charPosi: " + charPosi);
             if (posicion == 0) {
-                System.out.println("1111111111111111111111111111");
                 if (cadena.length() > 0) {
-                    System.out.println("222222222222222");
-
                     cadena = cadena.substring(0, cadena.length() - 1);
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 }
             } else {
-                System.out.println("333333333333333333333");
-
                 if (cadena.length() > 2) {
-                    System.out.println("444444444444444");
-
                     cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 } else {
                     cadena = cadena.substring(0, cadena.length() - 1);
-                    System.out.println("444444444444444444444444444");
-
                 }
                 posicion = posicion - 2;
                 if (posicion < 0) {
@@ -4455,7 +4414,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "-";
+            cadena = "-" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4474,7 +4433,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "*";
+            cadena = "*" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4493,7 +4452,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "/";
+            cadena = "/" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4512,7 +4471,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "+";
+            cadena = "+" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
@@ -4536,7 +4495,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "u";
+            cadena = "u" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4555,7 +4514,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "z";
+            cadena = "z" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4574,7 +4533,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "y";
+            cadena = "y" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4593,7 +4552,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "x";
+            cadena = "x" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4612,7 +4571,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "ln";
+            cadena = "ln" + cadena ;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4631,7 +4590,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "log";
+            cadena = "log" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4649,7 +4608,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "sen";
+            cadena = "sen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4668,7 +4627,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "cos";
+            cadena = "cos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4687,7 +4646,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "tan";
+            cadena = "tan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4706,7 +4665,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arcsen";
+            cadena = "arcsen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4725,7 +4684,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arccos";
+            cadena = "arccos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4744,7 +4703,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arctan";
+            cadena = "arctan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4763,7 +4722,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "0";
+            cadena = "0" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4782,7 +4741,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "1";
+            cadena = "1" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4801,7 +4760,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "2";
+            cadena = "2" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4820,7 +4779,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "3";
+            cadena = "3" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4839,7 +4798,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "4";
+            cadena = "4" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4858,7 +4817,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "5";
+            cadena = "5" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4877,7 +4836,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "6";
+            cadena = "6" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4896,7 +4855,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "7";
+            cadena = "7" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4915,7 +4874,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "8";
+            cadena = "8" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4934,7 +4893,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "9";
+            cadena = "9" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4953,7 +4912,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ".";
+            cadena = "." + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4971,7 +4930,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "π";
+            cadena = "π" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4989,7 +4948,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "e";
+            cadena = "e" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5008,7 +4967,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "√";
+            cadena = "√" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5027,7 +4986,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "^";
+            cadena = "^" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5046,7 +5005,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "(";
+            cadena = "(" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5065,7 +5024,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ")";
+            cadena = ")" +  cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5082,40 +5041,25 @@ public class Integral extends javax.swing.JFrame {
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralTripleExpresion.getText().trim();
-        System.out.println("cadena.length(): " + cadena.length());
-        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
-
         if (cadena.length() > 0) {
             char charPosi = cadena.charAt(cadena.length() - 1);
-            System.out.println("charPosi: " + charPosi);
             if (posicion == 0) {
-                System.out.println("1111111111111111111111111111");
                 if (cadena.length() > 0) {
-                    System.out.println("222222222222222");
-
                     cadena = cadena.substring(0, cadena.length() - 1);
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 }
             } else {
-                System.out.println("333333333333333333333");
-
                 if (cadena.length() > 2) {
-                    System.out.println("444444444444444");
-
                     cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 } else {
                     cadena = cadena.substring(0, cadena.length() - 1);
-                    System.out.println("444444444444444444444444444");
-
                 }
                 posicion = posicion - 2;
                 if (posicion < 0) {
@@ -5131,7 +5075,7 @@ public class Integral extends javax.swing.JFrame {
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "-";
+            cadena = "-" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "-" + cadena.substring(posicion, cadena.length());
@@ -5145,7 +5089,7 @@ public class Integral extends javax.swing.JFrame {
     private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "*";
+            cadena = "*" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "*" + cadena.substring(posicion, cadena.length());
@@ -5159,7 +5103,7 @@ public class Integral extends javax.swing.JFrame {
     private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "/";
+            cadena = "/" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "/" + cadena.substring(posicion, cadena.length());
@@ -5174,7 +5118,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "+";
+            cadena = "+" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
@@ -5198,7 +5142,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "z";
+            cadena = "z" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5217,7 +5161,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "y";
+            cadena = "y" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5236,7 +5180,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "x";
+            cadena = "x" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5255,7 +5199,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "ln";
+            cadena = "ln" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5274,7 +5218,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "log";
+            cadena = "log" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5293,7 +5237,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "sen";
+            cadena = "sen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5312,7 +5256,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "cos";
+            cadena = "cos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5331,7 +5275,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "tan";
+            cadena = "tan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5350,7 +5294,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arcsen";
+            cadena = "arcsen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5369,7 +5313,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arccos";
+            cadena = "arccos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5388,7 +5332,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arctan";
+            cadena = "arctan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5406,7 +5350,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "0";
+            cadena = "0" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
@@ -5421,7 +5365,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "1";
+            cadena = "1" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "1" + cadena.substring(posicion, cadena.length());
@@ -5436,7 +5380,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "2";
+            cadena = "2" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "2" + cadena.substring(posicion, cadena.length());
@@ -5451,7 +5395,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "3";
+            cadena = "3" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "3" + cadena.substring(posicion, cadena.length());
@@ -5466,7 +5410,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "4";
+            cadena =  "4" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "4" + cadena.substring(posicion, cadena.length());
@@ -5481,7 +5425,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "5";
+            cadena = "5" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "5" + cadena.substring(posicion, cadena.length());
@@ -5496,7 +5440,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "6";
+            cadena = "6" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "6" + cadena.substring(posicion, cadena.length());
@@ -5511,7 +5455,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "7";
+            cadena = "7" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "7" + cadena.substring(posicion, cadena.length());
@@ -5526,7 +5470,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "8";
+            cadena = "8" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "8" + cadena.substring(posicion, cadena.length());
@@ -5541,7 +5485,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "9";
+            cadena = "9" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "9" + cadena.substring(posicion, cadena.length());
@@ -5556,7 +5500,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ".";
+            cadena = "." + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "." + cadena.substring(posicion, cadena.length());
@@ -5571,7 +5515,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "π";
+            cadena = "π" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "π" + cadena.substring(posicion, cadena.length());
@@ -5586,7 +5530,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "e";
+            cadena = "e" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "e" + cadena.substring(posicion, cadena.length());
@@ -5601,7 +5545,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "√";
+            cadena = "√" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "√" + cadena.substring(posicion, cadena.length());
@@ -5616,7 +5560,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "^";
+            cadena = "^" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "^" + cadena.substring(posicion, cadena.length());
@@ -5631,7 +5575,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "(";
+            cadena = "(" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "(" + cadena.substring(posicion, cadena.length());
@@ -5646,7 +5590,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ")";
+            cadena = ")" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + ")" + cadena.substring(posicion, cadena.length());
@@ -5660,40 +5604,25 @@ public class Integral extends javax.swing.JFrame {
     private void jButton133ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton133ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText().trim();
-        System.out.println("cadena.length(): " + cadena.length());
-        System.out.println("ActionPerformed - ActionPerformed borrar: " + posicion);
-
         if (cadena.length() > 0) {
             char charPosi = cadena.charAt(cadena.length() - 1);
-            System.out.println("charPosi: " + charPosi);
             if (posicion == 0) {
-                System.out.println("1111111111111111111111111111");
                 if (cadena.length() > 0) {
-                    System.out.println("222222222222222");
-
                     cadena = cadena.substring(0, cadena.length() - 1);
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 }
             } else {
-                System.out.println("333333333333333333333");
-
                 if (cadena.length() > 2) {
-                    System.out.println("444444444444444");
-
                     cadena = cadena.substring(0, posicion - 1) + "" + cadena.substring(posicion, cadena.length());
                     posicion = posicion - 2;
                     if (posicion < 0) {
                         posicion = 0;
                     }
-
                 } else {
                     cadena = cadena.substring(0, cadena.length() - 1);
-                    System.out.println("444444444444444444444444444");
-
                 }
                 posicion = posicion - 2;
                 if (posicion < 0) {
@@ -5710,7 +5639,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "-";
+            cadena = "-" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "-" + cadena.substring(posicion, cadena.length());
@@ -5725,7 +5654,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "*";
+            cadena = "*" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "*" + cadena.substring(posicion, cadena.length());
@@ -5740,7 +5669,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "/";
+            cadena = "/" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "/" + cadena.substring(posicion, cadena.length());
@@ -5755,7 +5684,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "+";
+            cadena = "+" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
@@ -5778,7 +5707,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "y";
+            cadena = "y" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "y" + cadena.substring(posicion, cadena.length());
@@ -5793,7 +5722,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "x";
+            cadena = "x" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "x" + cadena.substring(posicion, cadena.length());
@@ -5809,7 +5738,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "ln";
+            cadena = "ln" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5833,7 +5762,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "log";
+            cadena = "log" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5852,7 +5781,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "sen";
+            cadena = "sen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5871,7 +5800,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "cos";
+            cadena = "cos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5890,7 +5819,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "tan";
+            cadena = "tan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5912,7 +5841,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arcsen";
+            cadena = "arcsen" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5934,7 +5863,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arccos";
+            cadena = "arccos" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5953,7 +5882,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "arctan";
+            cadena = "arctan" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5971,7 +5900,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "0";
+            cadena = "0" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "0" + cadena.substring(posicion, cadena.length());
@@ -5986,7 +5915,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "1";
+            cadena = "1" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "1" + cadena.substring(posicion, cadena.length());
@@ -6001,7 +5930,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "2";
+            cadena = "2" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "2" + cadena.substring(posicion, cadena.length());
@@ -6016,7 +5945,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "3";
+            cadena = "3" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "3" + cadena.substring(posicion, cadena.length());
@@ -6031,7 +5960,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "4";
+            cadena = "4" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "4" + cadena.substring(posicion, cadena.length());
@@ -6046,7 +5975,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "5";
+            cadena = "5" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "5" + cadena.substring(posicion, cadena.length());
@@ -6061,7 +5990,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "6";
+            cadena = "6" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "6" + cadena.substring(posicion, cadena.length());
@@ -6076,7 +6005,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "7";
+            cadena = "7" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "7" + cadena.substring(posicion, cadena.length());
@@ -6091,7 +6020,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "8";
+            cadena = "8" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "8" + cadena.substring(posicion, cadena.length());
@@ -6105,7 +6034,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "9";
+            cadena = "9" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "9" + cadena.substring(posicion, cadena.length());
@@ -6119,7 +6048,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ".";
+            cadena = "." + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "." + cadena.substring(posicion, cadena.length());
@@ -6133,7 +6062,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "π";
+            cadena = "π" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "π" + cadena.substring(posicion, cadena.length());
@@ -6147,7 +6076,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "e";
+            cadena = "e" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "e" + cadena.substring(posicion, cadena.length());
@@ -6177,7 +6106,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "^";
+            cadena = "^" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "^" + cadena.substring(posicion, cadena.length());
@@ -6192,7 +6121,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "(";
+            cadena = "(" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "(" + cadena.substring(posicion, cadena.length());
@@ -6207,7 +6136,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + ")";
+            cadena = ")" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + ")" + cadena.substring(posicion, cadena.length());
@@ -6257,7 +6186,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "-";
+            cadena = "-" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "-" + cadena.substring(posicion, cadena.length());
@@ -6272,7 +6201,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "*";
+            cadena = "*" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "*" + cadena.substring(posicion, cadena.length());
@@ -6287,7 +6216,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "/";
+            cadena = "/" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "/" + cadena.substring(posicion, cadena.length());
@@ -6302,7 +6231,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "+";
+            cadena = "+" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "+" + cadena.substring(posicion, cadena.length());
@@ -6325,7 +6254,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = cadena + "x";
+            cadena = "x" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "x" + cadena.substring(posicion, cadena.length());
