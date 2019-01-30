@@ -24,7 +24,7 @@ public class MonteCarlo {
         p = new Parseador();
         p.configuracion_1();
         p.agregarVariable("x", 0);
-
+        String funcion2 = funcion;
         funcion = cambiarSimbolos(funcion);
 
         resultadoParseo = p.parsearExpresion(funcion);
@@ -53,9 +53,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral simple: " + funcion + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral simple: " + funcion + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -74,7 +74,7 @@ public class MonteCarlo {
         p.configuracion_1();
         p.agregarVariable("x", 0);
         p.agregarVariable("y", 0);
-
+        String funcion2 = funcion;
         funcion = cambiarSimbolos(funcion);
 
         resultadoParseo = p.parsearExpresion(funcion);
@@ -107,9 +107,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral doble: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral doble: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -129,7 +129,7 @@ public class MonteCarlo {
         p.agregarVariable("x", 0);
         p.agregarVariable("y", 0);
         p.agregarVariable("z", 0);
-
+        String funcion2 = funcion;
         funcion = cambiarSimbolos(funcion);
 
         resultadoParseo = p.parsearExpresion(funcion);
@@ -165,9 +165,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral triple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral triple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "   Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "   Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -188,7 +188,7 @@ public class MonteCarlo {
         p.agregarVariable("y", 0);
         p.agregarVariable("z", 0);
         p.agregarVariable("u", 0);
-
+        String funcion2 = funcion;
         funcion = cambiarSimbolos(funcion);
 
         resultadoParseo = p.parsearExpresion(funcion);
@@ -227,8 +227,8 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h +"]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
-            System.out.println("\nIntegral cuádruple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h +"]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -251,7 +251,7 @@ public class MonteCarlo {
         p.agregarVariable("z", 0);
         p.agregarVariable("u", 0);
         p.agregarVariable("w", 0);
-
+        String funcion2 = funcion;
         funcion = cambiarSimbolos(funcion);
 
         resultadoParseo = p.parsearExpresion(funcion);
@@ -293,9 +293,9 @@ public class MonteCarlo {
 
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
 
-            System.out.println("\nIntegral quíntuple: " + funcion + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -307,7 +307,10 @@ public class MonteCarlo {
         String fun = "";
         fun = funcion.replace("π", "pi");
         fun = fun.replace("√", "sqrt");
-        fun = fun.replace("sen", "sin");
+        fun = fun.replace("sen", "sin");       
+        fun = fun.replace("arcsen", "asin");
+        fun = fun.replace("arccos", "acos");
+        fun = fun.replace("arctan", "atan");      
         return fun;
     }
 
