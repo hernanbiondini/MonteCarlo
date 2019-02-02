@@ -315,6 +315,8 @@ public class Integral extends javax.swing.JFrame {
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
         jButton37 = new javax.swing.JButton();
+        jPanel22 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -3061,6 +3063,28 @@ public class Integral extends javax.swing.JFrame {
         );
 
         jTabbedPane2.addTab("Integral quíntuple", jPanel4);
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/integralmontecarlo/mc.jpg"))); // NOI18N
+        jLabel37.setText("jLabel37");
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 1186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(83, Short.MAX_VALUE))
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGap(102, 102, 102)
+                .addComponent(jLabel37)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Monte Carlo", jPanel22);
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -6508,6 +6532,7 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -6528,6 +6553,7 @@ public class Integral extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
