@@ -1,6 +1,7 @@
 package integralmontecarlo;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
+import integralmontecarlo.applet.MonteCarloApplet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
