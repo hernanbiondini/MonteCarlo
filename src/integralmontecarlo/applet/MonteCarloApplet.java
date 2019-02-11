@@ -1,4 +1,3 @@
-
 package integralmontecarlo.applet;
 
 /**
@@ -23,15 +22,14 @@ public class MonteCarloApplet extends Applet
     private int pointsInCircle = 0;
     private DecimalFormat df = new DecimalFormat("0.000000000000");
 
-    // If set to true, restarts the calculation.
+// Si se establece en verdadero, reinicia el cálculo.    
     private boolean restart_p = false;
-
     private Thread monteCarloThread;
 
     public void init() {
         System.out.println("init");
 
-        // Create the UI.
+        // Crea la UI.
         setLayout(new BorderLayout());
 
         drawArea = new MonteCarloCanvas();
@@ -43,7 +41,7 @@ public class MonteCarloApplet extends Applet
         validate();
     }
 
-    // Lay out the message area at the bottom.
+    // Coloca el área del mensaje en la parte inferior.
     private Panel makeMessageArea() {
         System.out.println("makeMessageArea");
         messageArea = new Panel();
@@ -80,7 +78,7 @@ public class MonteCarloApplet extends Applet
         return messageArea;
     }
 
-    // Lay out the buttons on the right.
+    // Coloca los botones a la derecha.
     private Panel makeButtonArea() {
         System.out.println("makeButtonArea");
         Panel buttonArea = new Panel();
@@ -106,7 +104,7 @@ public class MonteCarloApplet extends Applet
         return buttonArea;
     }
 
-    // Called from Thread.start(); part of the Runnable interface.
+    // Llamado desde Thread.start (); parte de la interfaz Runnable.
     public void run() {
         System.out.println("run");
         while (Thread.currentThread() == monteCarloThread) {
@@ -117,8 +115,7 @@ public class MonteCarloApplet extends Applet
                 numPoints = 0;
             }
 
-            // MonteCarloCanvas.addPoint() returns true if the point added
-            // was within the circle.
+// MonteCarloCanvas.addPoint () devuelve true si el punto agregado estaba dentro del círculo.
             if (drawArea.addPoint()) {
                 pointsInCircle++;
             }
@@ -126,13 +123,10 @@ public class MonteCarloApplet extends Applet
             count.setText("" + numPoints);
             piApprox.setText("" + df.format((double) pointsInCircle * 4 / numPoints));
 
-            // Try really hard to yield execution to the drawing thread.
-            // On some platforms (Netscape under Linux, for example),
-            // it is really hard to give the drawing thread (the one that
-            // calls update()) a chance to run. We need to sleep at least 5
-            // milliseconds to actually yield it; less won't do. We don't
-            // want to slow down our calculation too much, so we just do it
-            // every 100 points.
+            // En algunas plataformas (Netscape bajo Linux, por ejemplo),
+            // es muy difícil dar el hilo de dibujo (el que
+            // llama a update ()) una oportunidad para ejecutar. Se necesita dormir al menos 5
+            // milisegundos para producirlo realmente, lo hacemos cada 100 puntos.
             Thread.yield();
             if (numPoints % 100 == 0) {
                 try {
@@ -159,7 +153,7 @@ public class MonteCarloApplet extends Applet
         startButton.setLabel("Comenzar");
     }
 
-    // Handle button presses.
+    // Manejar pulsadores de botones.
     public void actionPerformed(ActionEvent e) {
         System.out.println("actionPerformed");
         String cmd = e.getActionCommand();

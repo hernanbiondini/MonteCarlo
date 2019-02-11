@@ -1,4 +1,3 @@
-
 package integralmontecarlo.applet;
 
 import java.awt.Canvas;
@@ -6,24 +5,21 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Point;
-import java.lang.Math;
-import java.awt.*;
 
 /**
  *
  * @author hernan
  */
-
 public class MonteCarloCanvas extends Canvas {
 
-    // Keep an array of a thousand points around. If we calculate more
-    // than that in between calls to update(), we throw the rest on the floor.
+    // Mantener una matriz de mil puntos alrededor. Si se calcula más
+    // que entre las llamadas a update (), se rompe.
     private Point points[] = new Point[1000];
     private Color colors[] = new Color[1000];
     private Color lightBlue = new Color(150, 150, 255);
     private int curPoint = 0;
 
-    // Set to true to clear the display and redraw the border.
+    // Establecerlo en verdadero para borrar la visualización y volver a dibujar el borde.   
     private boolean clear_p = true;
 
     public MonteCarloCanvas() {
@@ -32,14 +28,14 @@ public class MonteCarloCanvas extends Canvas {
         }
     }
 
-    // Returns true if point added was in the circle.
+    // Devuelve verdadero si el punto agregado estaba en el círculo.    
     public boolean addPoint() {
         Dimension size = getSize();
         int xoffset = 0;
         int yoffset = 0;
 
-        // Center the square inside the drawing area, and leave space
-        // for the border.
+        // Centra la plaza dentro del área de dibujo, y deja espacio
+        // para la frontera.
         if (size.width > size.height) {
             xoffset = (size.width - size.height) / 2 + 1;
             yoffset = 1;
@@ -59,8 +55,8 @@ public class MonteCarloCanvas extends Canvas {
         double magY = .5 - y;
         boolean inUnitCircle = Math.sqrt(magX * magX + magY * magY) <= .5;
 
-        // Synchronize on points so that the update thread doesn't come and
-        // try to draw while we're updating it.
+        // Sincronizar en puntos para que el hilo de actualización no llegue y
+        // intenta dibujar mientras lo estamos actualizando.
         synchronized (points) {
             if (curPoint < 1000) {
                 if (inUnitCircle) {
@@ -75,7 +71,7 @@ public class MonteCarloCanvas extends Canvas {
             }
         }
 
-        // Ask ourselves to redraw.
+// Redibujar.        
         repaint();
         return inUnitCircle;
     }
@@ -84,9 +80,9 @@ public class MonteCarloCanvas extends Canvas {
         clear_p = true;
     }
 
-    // Drawing function. We override this instead of paint() since we
-    // don't want to erase and redraw the whole screen (don't want to
-    // keep around that much state anyway).
+// Función de dibujo. Anulamos esto en lugar de paint () ya que
+// no se quiere borrar y volver a dibujar toda la pantalla 
+// (no se quiere mantener alrededor de ese estado de todos modos).
     public void update(Graphics g) {
         if (clear_p) {
             clear_p = false;
@@ -95,7 +91,7 @@ public class MonteCarloCanvas extends Canvas {
             g.fillRect(0, 0, size.width, size.height);
             g.setColor(Color.black);
 
-            // Calculate where to put the border.
+// Calcula donde poner el borde.            
             int xoffset = 0;
             int yoffset = 0;
 
@@ -106,11 +102,10 @@ public class MonteCarloCanvas extends Canvas {
                 yoffset = (size.height - size.width) / 2;
                 size.height = size.width;
             }
-            // Draw the border.
+// Dibuja el borde.
             g.drawRect(xoffset, yoffset, size.width - 1, size.height - 1);
         }
-        // Synchronized on points so we don't draw it and truncate it while
-        // a point is being added.
+        // Sincronizado en puntos para que no lo dibujemos y lo trunquemos mientras se está agregando un punto.
         synchronized (points) {
             for (int i = 0; i < curPoint; i++) {
                 Point p = points[i];
