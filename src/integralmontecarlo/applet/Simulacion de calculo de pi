@@ -1,1 +1,29 @@
 
+Estimación de pi
+
+
+Si un círculo de radio R está inscrito dentro de un cuadrado con longitud de lado 2R, entonces
+el área del círculo será pi * R ^ 2 y el área del cuadrado será (2R) ^ 2. 
+
+
+Por lo tanto, la relación del área del círculo al área del cuadrado será pi / 4.
+
+Esto significa que, si se seleccionan N puntos al azar dentro del cuadrado, aproximadamente N
+* pi / 4 de esos puntos deberían caer dentro del círculo.
+
+Este programa recoge puntos al azar dentro del cuadrado. Luego verifica si el punto está
+dentro del círculo (sabe que está dentro del círculo si x ^ 2 + y ^ 2 < R ^ 2, donde x e y son las
+coordenadas del punto y R es el radio del círculo).
+
+ El programa realiza un seguimiento de cuántos puntos se han recogido hasta ahora (N) 
+y cuántos de esos puntos cayeron dentro del círculo (M).
+
+
+Pi se aproxima de la siguiente manera:
+
+
+     4 * M
+pi = --------
+       N
+
+
