@@ -71,7 +71,7 @@ public class MonteCarloCanvas extends Canvas {
             }
         }
 
-// Redibujar.        
+        // Redibujar.        
         repaint();
         return inUnitCircle;
     }
@@ -80,9 +80,9 @@ public class MonteCarloCanvas extends Canvas {
         clear_p = true;
     }
 
-// Función de dibujo. Anulamos esto en lugar de paint () ya que
-// no se quiere borrar y volver a dibujar toda la pantalla 
-// (no se quiere mantener alrededor de ese estado de todos modos).
+    // Función de dibujo. Anulamos esto en lugar de paint () ya que
+    // no se quiere borrar y volver a dibujar toda la pantalla 
+    // (no se quiere mantener alrededor de ese estado de todos modos).
     public void update(Graphics g) {
         if (clear_p) {
             clear_p = false;
@@ -91,7 +91,7 @@ public class MonteCarloCanvas extends Canvas {
             g.fillRect(0, 0, size.width, size.height);
             g.setColor(Color.black);
 
-// Calcula donde poner el borde.            
+            // Calcula donde poner el borde.            
             int xoffset = 0;
             int yoffset = 0;
 
@@ -102,7 +102,7 @@ public class MonteCarloCanvas extends Canvas {
                 yoffset = (size.height - size.width) / 2;
                 size.height = size.width;
             }
-// Dibuja el borde.
+            // Dibuja el borde.
             g.drawRect(xoffset, yoffset, size.width - 1, size.height - 1);
         }
         // Sincronizado en puntos para que no lo dibujemos y lo trunquemos mientras se está agregando un punto.
