@@ -62,7 +62,7 @@ public class MonteCarloCanvas extends Canvas {
                 if (inUnitCircle) {
                     colors[curPoint] = Color.blue;
                 } else {
-                    colors[curPoint] = lightBlue;
+                    colors[curPoint] = Color.RED;
                 }
                 int xloc = (int) (x * size.width + xoffset);
                 int yloc = (int) (y * size.height + yoffset);
