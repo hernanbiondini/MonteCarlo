@@ -2,6 +2,7 @@ package integralmontecarlo;
 
 import static java.lang.Math.sqrt;
 import java.text.DecimalFormat;
+import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 import org.nfunk.jep.ParseException;
 
@@ -13,8 +14,9 @@ public class MonteCarlo {
 
     private long ti = 0L;
     private long tt = 0L;
+    private String tiempoEjecucion = "";
 
-    public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, int n) throws ParseException, Exception {
+    public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, long n) throws ParseException, Exception {
         System.out.println("Evaluando integral simple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -51,11 +53,13 @@ public class MonteCarlo {
 
             tt = System.currentTimeMillis() - ti;
 
+            tiempoEjecucion = tiempo(tt);
+
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
 
-            System.out.println("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -63,7 +67,7 @@ public class MonteCarlo {
         return r;
     }
 
-    public Respuesta monteCarloIntegralDoble(String funcion, double a, double b, double c, double d, int n) throws ParseException, Exception {
+    public Respuesta monteCarloIntegralDoble(String funcion, double a, double b, double c, double d, long n) throws ParseException, Exception {
         System.out.println("Evaluando integral doble...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -105,11 +109,13 @@ public class MonteCarlo {
 
             tt = System.currentTimeMillis() - ti;
 
+            tiempoEjecucion = tiempo(tt);
+            
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
 
-            System.out.println("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -117,7 +123,7 @@ public class MonteCarlo {
         return r;
     }
 
-    public Respuesta monteCarloIntegralTriple(String funcion, double a, double b, double c, double d, double e, double f, int n) throws ParseException, Exception {
+    public Respuesta monteCarloIntegralTriple(String funcion, double a, double b, double c, double d, double e, double f, long n) throws ParseException, Exception {
         System.out.println("Evaluando integral triple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -163,11 +169,13 @@ public class MonteCarlo {
 
             tt = System.currentTimeMillis() - ti;
 
+            tiempoEjecucion = tiempo(tt);
+            
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
 
-            System.out.println("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "   Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -175,7 +183,7 @@ public class MonteCarlo {
         return r;
     }
 
-    public Respuesta monteCarloIntegralCuadruple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, int n) throws ParseException, Exception {
+    public Respuesta monteCarloIntegralCuadruple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, long n) throws ParseException, Exception {
         System.out.println("Evaluando integral cuádruple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -225,10 +233,12 @@ public class MonteCarlo {
 
             tt = System.currentTimeMillis() - ti;
 
+            tiempoEjecucion = tiempo(tt);
+            
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h +"]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
-            System.out.println("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            System.out.println("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -237,7 +247,7 @@ public class MonteCarlo {
         return r;
     }
 
-    public Respuesta monteCarloIntegralQuintuple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, double i, double j, int n) throws ParseException, Exception {
+    public Respuesta monteCarloIntegralQuintuple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, double i, double j, long n) throws ParseException, Exception {
         System.out.println("Evaluando integral quíntuple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -291,11 +301,13 @@ public class MonteCarlo {
 
             tt = System.currentTimeMillis() - ti;
 
+            tiempoEjecucion = tiempo(tt);
+            
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
 
-            System.out.println("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + "  Tiempo: " + tt + " milisegundos");
+            System.out.println("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -307,11 +319,61 @@ public class MonteCarlo {
         String fun = "";
         fun = funcion.replace("π", "pi");
         fun = fun.replace("√", "sqrt");
-        fun = fun.replace("sen", "sin");       
+        fun = fun.replace("sen", "sin");
         fun = fun.replace("arcsen", "asin");
         fun = fun.replace("arccos", "acos");
-        fun = fun.replace("arctan", "atan");      
+        fun = fun.replace("arctan", "atan");
         return fun;
+    }
+
+    public static String tiempo(long millis) {
+
+        StringBuilder sb = new StringBuilder(64);
+
+        if (millis < 0) {
+            throw new IllegalArgumentException("Duration must be greater than zero!");
+        }
+
+        if (millis < 999) {
+            sb.append(" Tiempo ");
+            sb.append(millis);
+            sb.append(" milisegundos ");
+        }
+
+        if (millis >= 1000 && millis < 60000) {
+            millis = millis / 1000;
+            sb.append(" Tiempo ");
+            sb.append(millis);
+            sb.append(" segundos ");
+        }
+
+        if (millis >= 60000) {
+            long days = TimeUnit.MILLISECONDS.toDays(millis);
+            millis -= TimeUnit.DAYS.toMillis(days);
+            long hours = TimeUnit.MILLISECONDS.toHours(millis);
+            millis -= TimeUnit.HOURS.toMillis(hours);
+            long minutes = TimeUnit.MILLISECONDS.toMinutes(millis);
+            millis -= TimeUnit.MINUTES.toMillis(minutes);
+            long seconds = TimeUnit.MILLISECONDS.toSeconds(millis);
+
+            sb.append("   Tiempo ");
+
+            if (millis >= 8600000) {
+                sb.append(days);
+                sb.append(" d ");
+            }
+
+            if (millis >= 3600000) {
+                sb.append(hours);
+                sb.append(" h ");
+            }
+
+            sb.append(minutes);
+            sb.append(" m ");
+            sb.append(seconds);
+            sb.append(" s ");
+        }
+        return (sb.toString());
     }
 
 }

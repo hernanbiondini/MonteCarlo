@@ -6736,12 +6736,12 @@ public class Integral extends javax.swing.JFrame {
             String funcion = "";
             double a = 0.0;
             double b = 0.0;
-            int n = 0;
+            long n = 0;
             funcion = this.jTextFieldIntegralSimpleExpresion.getText();
 
             a = valorParametro(this.jTextFieldIntegralSimpleA.getText());
             b = valorParametro(this.jTextFieldIntegralSimpleB.getText());
-            n = Integer.parseInt(this.jTextFieldIntegralSimplePuntos.getText());
+            n = Long.parseLong(this.jTextFieldIntegralSimplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralSimple(funcion, a, b, n);
             this.jTextField1SimpleValor.setText(r.getRespuesta());
@@ -6766,13 +6766,13 @@ public class Integral extends javax.swing.JFrame {
             double b = 0.0;
             double c = 0.0;
             double d = 0.0;
-            int n = 0;
+            long n = 0;
             funcion = this.jTextFieldIntegralDobleExpresion.getText();
             a = valorParametro(this.jTextFieldIntegralDobleA.getText());
             b = valorParametro(this.jTextFieldIntegralDobleB.getText());
             c = valorParametro(this.jTextFieldIntegralDobleC.getText());
             d = valorParametro(this.jTextFieldIntegralDobleD.getText());
-            n = Integer.parseInt(this.jTextFieldIntegralDoblePuntos.getText());
+            n = Long.parseLong(this.jTextFieldIntegralDoblePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralDoble(funcion, a, b, c, d, n);
             this.jTextField3DobleValor.setText(r.getRespuesta());
@@ -6799,7 +6799,7 @@ public class Integral extends javax.swing.JFrame {
             double d = 0.0;
             double e = 0.0;
             double f = 0.0;
-            int n = 0;
+            long n = 0;
             funcion = this.jTextFieldIntegralTripleExpresion.getText();
             a = valorParametro(this.jTextFieldIntegralTripleA.getText());
             b = valorParametro(this.jTextFieldIntegralTripleB.getText());
@@ -6807,7 +6807,7 @@ public class Integral extends javax.swing.JFrame {
             d = valorParametro(this.jTextFieldIntegralTripleD.getText());
             e = valorParametro(this.jTextFieldIntegralTripleE.getText());
             f = valorParametro(this.jTextFieldIntegralTripleF.getText());
-            n = Integer.parseInt(this.jTextFieldIntegralTriplePuntos.getText());
+            n = Long.parseLong(this.jTextFieldIntegralTriplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralTriple(funcion, a, b, c, d, e, f, n);
             this.jTextField5TripleValor.setText(r.getRespuesta());
@@ -6836,7 +6836,7 @@ public class Integral extends javax.swing.JFrame {
             double f = 0.0;
             double g = 0.0;
             double h = 0.0;
-            int n = 0;
+            long n = 0;
             funcion = this.jTextFieldIntegralCuadrupleExpresion.getText();
             a = valorParametro(this.jTextFieldIntegralCuadrupleA.getText());
             b = valorParametro(this.jTextFieldIntegralCuadrupleB.getText());
@@ -6846,7 +6846,7 @@ public class Integral extends javax.swing.JFrame {
             f = valorParametro(this.jTextFieldIntegralCuadrupleF.getText());
             g = valorParametro(this.jTextFieldIntegralCuadrupleG.getText());
             h = valorParametro(this.jTextFieldIntegralCuadrupleH.getText());
-            n = Integer.parseInt(this.jTextFieldIntegralCuadruplePuntos.getText());
+            n = Long.parseLong(this.jTextFieldIntegralCuadruplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
             this.jTextField5CuadrupleValor.setText(r.getRespuesta());
@@ -6877,7 +6877,7 @@ public class Integral extends javax.swing.JFrame {
             double h = 0.0;
             double i = 0.0;
             double j = 0.0;
-            int n = 0;
+            long n = 0;
             funcion = this.jTextFieldIntegralQuintupleExpresion.getText();
             a = valorParametro(this.jTextFieldIntegralQuintupleA.getText());
             b = valorParametro(this.jTextFieldIntegralQuintupleB.getText());
@@ -6889,7 +6889,7 @@ public class Integral extends javax.swing.JFrame {
             h = valorParametro(this.jTextFieldIntegralQuintupleH.getText());
             i = valorParametro(this.jTextFieldIntegralQuintupleI.getText());
             j = valorParametro(this.jTextFieldIntegralQuintupleJ.getText());
-            n = Integer.parseInt(this.jTextFieldIntegralQuintuplePuntos.getText());
+            n = Long.parseLong(this.jTextFieldIntegralQuintuplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
             this.jTextField5QuintupleValor.setText(r.getRespuesta());
