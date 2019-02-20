@@ -1,6 +1,5 @@
 
-Estimación de pi
-
+-------------------------- Estimación de pi mediante simulación de Monte Carlo --------------------------------------
 
 Si un círculo de radio R está inscrito dentro de un cuadrado con longitud de lado 2R, entonces
 el área del círculo será pi * R ^ 2 y el área del cuadrado será (2R) ^ 2. 
@@ -26,7 +25,7 @@ Pi se aproxima de la siguiente manera:
 pi = --------
        N
 
---------------------------------------------------------------------------------------------------
+                           ---------------------------------
 
 Determinar el valor de 𝜋 usando un cuadrado de longitud 4u y un circulo de diámetro 4u usando el método de atínale y falla.
 
@@ -45,3 +44,8 @@ Luego usando la proporción 𝑓 = 𝑁 𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑒�
 𝐴𝐶𝑖𝑟𝑐𝑢𝑙𝑜/𝐴𝐶𝑢𝑎𝑑𝑟𝑎𝑑𝑜 = 𝑁 𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑒𝑙 𝑐𝑖𝑟𝑐𝑢𝑙𝑜/𝑁 𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑒𝑙 𝑐𝑢𝑎𝑑𝑟𝑎𝑑𝑜 = 4𝜋𝑢^2/16𝑢^2 = 𝜋/4
 
 𝜋=4(𝑁𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑒𝑙 𝑐𝑖𝑟𝑐𝑢𝑙𝑜/𝑁𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑒𝑙 𝑐𝑢𝑎𝑑𝑟𝑎𝑑𝑜)=4𝑓
+
+
+-------------------------- Estimación de pi mediante integración de Monte Carlo --------------------------------------
+
+ (0I1 √(1-x^2) dx) * 4 >> 3.1415
