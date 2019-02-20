@@ -17,6 +17,9 @@ public class MonteCarlo {
     private String tiempoEjecucion = "";
 
     public Respuesta monteCarloIntegralSimple(String funcion, double a, double b, long n) throws ParseException, Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Evaluando integral simple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -68,6 +71,9 @@ public class MonteCarlo {
     }
 
     public Respuesta monteCarloIntegralDoble(String funcion, double a, double b, double c, double d, long n) throws ParseException, Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Evaluando integral doble...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -124,6 +130,9 @@ public class MonteCarlo {
     }
 
     public Respuesta monteCarloIntegralTriple(String funcion, double a, double b, double c, double d, double e, double f, long n) throws ParseException, Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Evaluando integral triple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -184,6 +193,9 @@ public class MonteCarlo {
     }
 
     public Respuesta monteCarloIntegralCuadruple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, long n) throws ParseException, Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Evaluando integral cuádruple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
@@ -248,6 +260,9 @@ public class MonteCarlo {
     }
 
     public Respuesta monteCarloIntegralQuintuple(String funcion, double a, double b, double c, double d, double e, double f, double g, double h, double i, double j, long n) throws ParseException, Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("Evaluando integral quíntuple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
