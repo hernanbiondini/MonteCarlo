@@ -42,7 +42,7 @@ public class MonteCarlo {
             double f2s = 0.0;
             double errest = 0.0;
             double sum = 0;
-            for (int i = 0; i < n; i++) {
+            for (long i = 0; i < n; i++) {
                 x = Math.random() * (b - a) + a;
                 p.agregarVariable("x", x);
                 sum += p.evaluarExpresionDouble();
@@ -98,7 +98,8 @@ public class MonteCarlo {
             double fs = 0.0;
             double f2s = 0.0;
             double errest = 0.0;
-            for (int i = 0; i < n; i++) {
+            for (long i = 0; i < n; i++) {
+            System.out.println("Punto: " + i);
                 x = a + Math.random() * Math.abs(b - a);
                 y = c + Math.random() * Math.abs(d - c);
                 p.agregarVariable("x", x);
@@ -159,7 +160,7 @@ public class MonteCarlo {
             double fs = 0.0;
             double f2s = 0.0;
             double errest = 0.0;
-            for (int i = 0; i < n; i++) {
+            for (long i = 0; i < n; i++) {
                 x = a + Math.random() * Math.abs(b - a);
                 y = c + Math.random() * Math.abs(d - c);
                 z = e + Math.random() * Math.abs(f - e);
@@ -224,7 +225,7 @@ public class MonteCarlo {
             double fs = 0.0;
             double f2s = 0.0;
             double errest = 0.0;
-            for (int i = 0; i < n; i++) {
+            for (long i = 0; i < n; i++) {
                 x = a + Math.random() * Math.abs(b - a);
                 y = c + Math.random() * Math.abs(d - c);
                 z = e + Math.random() * Math.abs(f - e);
@@ -293,7 +294,7 @@ public class MonteCarlo {
             double fs = 0.0;
             double f2s = 0.0;
             double errest = 0.0;
-            for (int cont = 0; cont < n; cont++) {
+            for (long cont = 0; cont < n; cont++) {
                 x = a + Math.random() * Math.abs(b - a);
                 y = c + Math.random() * Math.abs(d - c);
                 z = e + Math.random() * Math.abs(f - e);
