@@ -23,6 +23,7 @@ public class MonteCarlo {
         System.out.println("Evaluando integral simple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
+        DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
         Parseador p;
@@ -58,11 +59,12 @@ public class MonteCarlo {
 
             tiempoEjecucion = tiempo(tt);
 
-            r.setRespuesta(String.valueOf(approx));
-            r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            r.setRespuesta(fmt.format(approx));
+            r.setEstimacionError(fmt.format(errest));
+            String nStr = formatea.format(n);
+            r.setRespuestaConsola("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
 
-            System.out.println("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            System.out.println("\nIntegral simple: " + funcion2 + "  intervalos [" + a + "," + b + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -77,6 +79,7 @@ public class MonteCarlo {
         System.out.println("Evaluando integral doble...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
+        DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
         Parseador p;
@@ -118,11 +121,12 @@ public class MonteCarlo {
 
             tiempoEjecucion = tiempo(tt);
 
-            r.setRespuesta(String.valueOf(approx));
-            r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            r.setRespuesta(fmt.format(approx));
+            r.setEstimacionError(fmt.format(errest));
+            String nStr = formatea.format(n);
+            r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
 
-            System.out.println("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            System.out.println("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -137,6 +141,7 @@ public class MonteCarlo {
         System.out.println("Evaluando integral triple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
+        DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
         Parseador p;
@@ -181,11 +186,12 @@ public class MonteCarlo {
 
             tiempoEjecucion = tiempo(tt);
 
-            r.setRespuesta(String.valueOf(approx));
-            r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            r.setRespuesta(fmt.format(approx));
+            r.setEstimacionError(fmt.format(errest));
+            String nStr = formatea.format(n);
+            r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
 
-            System.out.println("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            System.out.println("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -200,6 +206,7 @@ public class MonteCarlo {
         System.out.println("Evaluando integral cuádruple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
+        DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
         Parseador p;
@@ -248,10 +255,11 @@ public class MonteCarlo {
 
             tiempoEjecucion = tiempo(tt);
 
-            r.setRespuesta(String.valueOf(approx));
-            r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
-            System.out.println("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            r.setRespuesta(fmt.format(approx));
+            r.setEstimacionError(fmt.format(errest));
+            String nStr = formatea.format(n);
+            r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
+            System.out.println("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
@@ -267,6 +275,7 @@ public class MonteCarlo {
         System.out.println("Evaluando integral quíntuple...");
         Respuesta r = new Respuesta();
         DecimalFormat fmt = new DecimalFormat("0.################");
+        DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
         Parseador p;
@@ -319,11 +328,12 @@ public class MonteCarlo {
 
             tiempoEjecucion = tiempo(tt);
 
-            r.setRespuesta(String.valueOf(approx));
-            r.setEstimacionError(String.valueOf(errest));
-            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            r.setRespuesta(fmt.format(approx));
+            r.setEstimacionError(fmt.format(errest));
+            String nStr = formatea.format(n);
+            r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
 
-            System.out.println("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
+            System.out.println("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + nStr + "  puntos: " + fmt.format(approx) + "  Error: " + fmt.format(errest) + tiempoEjecucion);
         } else {
             System.out.println(resultadoParseo);
             JOptionPane.showMessageDialog(null, resultadoParseo, "Error durante el análisis sintáctico: ", JOptionPane.ERROR_MESSAGE);
