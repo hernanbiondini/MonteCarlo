@@ -99,7 +99,7 @@ public class MonteCarlo {
             double f2s = 0.0;
             double errest = 0.0;
             for (long i = 0; i < n; i++) {
-            System.out.println("Punto: " + i);
+//            System.out.println("Punto: " + i);
                 x = a + Math.random() * Math.abs(b - a);
                 y = c + Math.random() * Math.abs(d - c);
                 p.agregarVariable("x", x);
@@ -117,7 +117,7 @@ public class MonteCarlo {
             tt = System.currentTimeMillis() - ti;
 
             tiempoEjecucion = tiempo(tt);
-            
+
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
             r.setRespuestaConsola("\nIntegral doble: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
@@ -180,7 +180,7 @@ public class MonteCarlo {
             tt = System.currentTimeMillis() - ti;
 
             tiempoEjecucion = tiempo(tt);
-            
+
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
             r.setRespuestaConsola("\nIntegral triple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
@@ -247,7 +247,7 @@ public class MonteCarlo {
             tt = System.currentTimeMillis() - ti;
 
             tiempoEjecucion = tiempo(tt);
-            
+
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
             r.setRespuestaConsola("\nIntegral cuádruple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
@@ -318,7 +318,7 @@ public class MonteCarlo {
             tt = System.currentTimeMillis() - ti;
 
             tiempoEjecucion = tiempo(tt);
-            
+
             r.setRespuesta(String.valueOf(approx));
             r.setEstimacionError(String.valueOf(errest));
             r.setRespuestaConsola("\nIntegral quíntuple: " + funcion2 + "  intervalos [" + a + "," + b + "," + c + "," + d + "," + e + "," + g + "," + h + "," + i + "," + j + "]  con  " + n + "  puntos: " + fmt.format(approx) + "  Error: " + errest + tiempoEjecucion);
@@ -345,25 +345,25 @@ public class MonteCarlo {
     public static String tiempo(long millis) {
 
         StringBuilder sb = new StringBuilder(64);
-
+        long millis2 = millis;
         if (millis < 0) {
             throw new IllegalArgumentException("Duration must be greater than zero!");
         }
 
-        if (millis < 999) {
+        if (millis2 < 999) {
             sb.append(" Tiempo ");
             sb.append(millis);
             sb.append(" milisegundos ");
         }
 
-        if (millis >= 1000 && millis < 60000) {
+        if (millis2 >= 1000 && millis2 < 60000) {
             millis = millis / 1000;
             sb.append(" Tiempo ");
             sb.append(millis);
             sb.append(" segundos ");
         }
 
-        if (millis >= 60000) {
+        if (millis2 >= 60000) {
             long days = TimeUnit.MILLISECONDS.toDays(millis);
             millis -= TimeUnit.DAYS.toMillis(days);
             long hours = TimeUnit.MILLISECONDS.toHours(millis);
@@ -374,12 +374,12 @@ public class MonteCarlo {
 
             sb.append("   Tiempo ");
 
-            if (millis >= 8600000) {
+            if (millis2 >= 8600000) {
                 sb.append(days);
                 sb.append(" d ");
             }
 
-            if (millis >= 3600000) {
+            if (millis2 >= 3600000) {
                 sb.append(hours);
                 sb.append(" h ");
             }
