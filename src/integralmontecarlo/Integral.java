@@ -2,6 +2,7 @@ package integralmontecarlo;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import integralmontecarlo.applet.MonteCarloApplet;
+import integralmontecarlo.exepciones.SintaxisExcepcion;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -4101,7 +4102,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena = "1"  + cadena;
+            cadena = "1" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4253,7 +4254,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
-            cadena =  "9" + cadena;
+            cadena = "9" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -4596,7 +4597,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = "ln" + cadena ;
+            cadena = "ln" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5049,7 +5050,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
-            cadena = ")" +  cadena;
+            cadena = ")" + cadena;
             //posicion = posicion + 1;
         } else {
             if (cadena.length() > 1) {
@@ -5435,7 +5436,7 @@ public class Integral extends javax.swing.JFrame {
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
-            cadena =  "4" + cadena;
+            cadena = "4" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "4" + cadena.substring(posicion, cadena.length());
@@ -6116,7 +6117,7 @@ public class Integral extends javax.swing.JFrame {
         System.out.println("posicion:" + posicion);
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
-            cadena = "√" + cadena ;
+            cadena = "√" + cadena;
         } else {
             if (cadena.length() > 1) {
                 cadena = cadena.substring(0, posicion) + "√" + cadena.substring(posicion, cadena.length());
@@ -6620,97 +6621,94 @@ public class Integral extends javax.swing.JFrame {
     private MonteCarlo im;
 
     private void formatearTextFields() {
-        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA, "-./eπ1234567890");
+        RestrictedTextField restricted1 = new RestrictedTextField(this.jTextFieldIntegralSimpleA, "()+*-./eπ1234567890");
 //        restricted1.setOnlyNums(true);
         restricted1.setLimit(5);
-        RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB, "-./eπ1234567890");
+        RestrictedTextField restricted2 = new RestrictedTextField(this.jTextFieldIntegralSimpleB, "()+*-./eπ1234567890");
 //        restricted2.setOnlyNums(true);
         restricted2.setLimit(5);
-
-        RestrictedTextField restricted3 = new RestrictedTextField(this.jTextFieldIntegralDobleA, "-./eπ1234567890");
+        RestrictedTextField restricted3 = new RestrictedTextField(this.jTextFieldIntegralDobleA, "()+*-./eπ1234567890");
 //        restricted3.setOnlyNums(true);
         restricted3.setLimit(5);
-        RestrictedTextField restricted4 = new RestrictedTextField(this.jTextFieldIntegralDobleB, "-./eπ1234567890");
+        RestrictedTextField restricted4 = new RestrictedTextField(this.jTextFieldIntegralDobleB, "()+*-./eπ1234567890");
 //        restricted4.setOnlyNums(true);
         restricted4.setLimit(5);
-        RestrictedTextField restricted5 = new RestrictedTextField(this.jTextFieldIntegralDobleC, "-./eπ1234567890");
+        RestrictedTextField restricted5 = new RestrictedTextField(this.jTextFieldIntegralDobleC, "()+*-./eπ1234567890");
 //        restricted5.setOnlyNums(true);
         restricted5.setLimit(5);
-        RestrictedTextField restricted6 = new RestrictedTextField(this.jTextFieldIntegralDobleD, "-./eπ1234567890");
+        RestrictedTextField restricted6 = new RestrictedTextField(this.jTextFieldIntegralDobleD, "()+*-./eπ1234567890");
 //        restricted6.setOnlyNums(true);
         restricted6.setLimit(5);
-
-        RestrictedTextField restricted7 = new RestrictedTextField(this.jTextFieldIntegralTripleA, "-./eπ1234567890");
+        RestrictedTextField restricted7 = new RestrictedTextField(this.jTextFieldIntegralTripleA, "()+*-./eπ1234567890");
 //        restricted7.setOnlyNums(true);
         restricted7.setLimit(5);
-        RestrictedTextField restricted8 = new RestrictedTextField(this.jTextFieldIntegralTripleB, "-./1234567890");
+        RestrictedTextField restricted8 = new RestrictedTextField(this.jTextFieldIntegralTripleB, "()+*-./1234567890");
 //        restricted8.setOnlyNums(true);
         restricted8.setLimit(5);
-        RestrictedTextField restricted9 = new RestrictedTextField(this.jTextFieldIntegralTripleC, "-./eπ1234567890");
+        RestrictedTextField restricted9 = new RestrictedTextField(this.jTextFieldIntegralTripleC, "()+*-./eπ1234567890");
 //        restricted9.setOnlyNums(true);
         restricted9.setLimit(5);
-        RestrictedTextField restricted10 = new RestrictedTextField(this.jTextFieldIntegralTripleD, "-./eπ1234567890");
+        RestrictedTextField restricted10 = new RestrictedTextField(this.jTextFieldIntegralTripleD, "()+*-./eπ1234567890");
 //        restricted10.setOnlyNums(true);
         restricted10.setLimit(5);
-        RestrictedTextField restricted11 = new RestrictedTextField(this.jTextFieldIntegralTripleE, "-./eπ1234567890");
+        RestrictedTextField restricted11 = new RestrictedTextField(this.jTextFieldIntegralTripleE, "()+*-./eπ1234567890");
 //        restricted11.setOnlyNums(true);
         restricted11.setLimit(5);
-        RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF, "-./eπ1234567890");
+        RestrictedTextField restricted12 = new RestrictedTextField(this.jTextFieldIntegralTripleF, "()+*-./eπ1234567890");
 //        restricted12.setOnlyNums(true);
         restricted12.setLimit(5);
-        RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA, "-./eπ1234567890");
+        RestrictedTextField restricted13 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleA, "()+*-./eπ1234567890");
 //        restricted13.setOnlyNums(true);
         restricted13.setLimit(5);
-        RestrictedTextField restricted14 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleB, "-./eπ1234567890");
+        RestrictedTextField restricted14 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleB, "()+*-./eπ1234567890");
 //        restricted14.setOnlyNums(true);
         restricted14.setLimit(5);
-        RestrictedTextField restricted15 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleC, "-./eπ1234567890");
+        RestrictedTextField restricted15 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleC, "()+*-./eπ1234567890");
 //        restricted15.setOnlyNums(true);
         restricted15.setLimit(5);
-        RestrictedTextField restricted16 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleD, "-./eπ1234567890");
+        RestrictedTextField restricted16 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleD, "()+*-./eπ1234567890");
 //        restricted16.setOnlyNums(true);
         restricted16.setLimit(5);
-        RestrictedTextField restricted17 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleE, "-./eπ1234567890");
+        RestrictedTextField restricted17 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleE, "()+*-./eπ1234567890");
 //        restricted17.setOnlyNums(true);
         restricted17.setLimit(5);
-        RestrictedTextField restricted18 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleF, "-./eπ1234567890");
+        RestrictedTextField restricted18 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleF, "()+*-./eπ1234567890");
 //        restricted18.setOnlyNums(true);
         restricted18.setLimit(5);
-        RestrictedTextField restricted19 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleG, "-./eπ1234567890");
+        RestrictedTextField restricted19 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleG, "()+*-./eπ1234567890");
 //        restricted19.setOnlyNums(true);
         restricted19.setLimit(5);
-        RestrictedTextField restricted20 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleH, "-./eπ1234567890");
+        RestrictedTextField restricted20 = new RestrictedTextField(this.jTextFieldIntegralCuadrupleH, "()+*-./eπ1234567890");
 //        restricted20.setOnlyNums(true);
         restricted20.setLimit(5);
-
-        RestrictedTextField restrictedq = new RestrictedTextField(this.jTextFieldIntegralQuintupleA, "-./eπ1234567890");
+        RestrictedTextField restrictedq = new RestrictedTextField(this.jTextFieldIntegralQuintupleA, "()+*-./eπ1234567890");
 //        restrictedq.setOnlyNums(true);
         restrictedq.setLimit(5);
-        RestrictedTextField restrictedw = new RestrictedTextField(this.jTextFieldIntegralQuintupleB, "-./eπ1234567890");
+        RestrictedTextField restrictedw = new RestrictedTextField(this.jTextFieldIntegralQuintupleB, "()+*-./eπ1234567890");
 //        restrictedw.setOnlyNums(true);
         restrictedw.setLimit(5);
-        RestrictedTextField restrictede = new RestrictedTextField(this.jTextFieldIntegralQuintupleC, "-./eπ1234567890");
+        RestrictedTextField restrictede = new RestrictedTextField(this.jTextFieldIntegralQuintupleC, "()+*-./eπ1234567890");
 //        restrictede.setOnlyNums(true);
         restrictede.setLimit(5);
-        RestrictedTextField restrictedr = new RestrictedTextField(this.jTextFieldIntegralQuintupleD, "-./eπ1234567890");
+        RestrictedTextField restrictedr = new RestrictedTextField(this.jTextFieldIntegralQuintupleD, "()+*-./eπ1234567890");
 //        restrictedr.setOnlyNums(true);
         restrictedr.setLimit(5);
-        RestrictedTextField restrictedt = new RestrictedTextField(this.jTextFieldIntegralQuintupleE, "-./eπ1234567890");
+        RestrictedTextField restrictedt = new RestrictedTextField(this.jTextFieldIntegralQuintupleE, "()+*-./eπ1234567890");
 //        restrictedt.setOnlyNums(true);
         restrictedt.setLimit(5);
-        RestrictedTextField restrictedy = new RestrictedTextField(this.jTextFieldIntegralQuintupleF, "-./eπ1234567890");
+        RestrictedTextField restrictedy = new RestrictedTextField(this.jTextFieldIntegralQuintupleF, "()+*-./eπ1234567890");
 //        restrictedy.setOnlyNums(true);
         restrictedy.setLimit(5);
-        RestrictedTextField restrictedu = new RestrictedTextField(this.jTextFieldIntegralQuintupleG, "-./eπ1234567890");
+        RestrictedTextField restrictedu = new RestrictedTextField(this.jTextFieldIntegralQuintupleG, "()+*-./eπ1234567890");
 //        restrictedu.setOnlyNums(true);
         restrictedu.setLimit(5);
-        RestrictedTextField restrictedi = new RestrictedTextField(this.jTextFieldIntegralQuintupleH, "-./eπ1234567890");
+        RestrictedTextField restrictedi = new RestrictedTextField(this.jTextFieldIntegralQuintupleH, "()+*-./eπ1234567890");
 //        restrictedi.setOnlyNums(true);
         restrictedi.setLimit(5);
-        RestrictedTextField restrictedo = new RestrictedTextField(this.jTextFieldIntegralQuintupleI, "-./eπ1234567890");
+        RestrictedTextField restrictedo = new RestrictedTextField(this.jTextFieldIntegralQuintupleI, "()+*-./eπ1234567890");
 //        restrictedo.setOnlyNums(true);
         restrictedo.setLimit(5);
-        RestrictedTextField restrictedp = new RestrictedTextField(this.jTextFieldIntegralQuintupleJ, "-./eπ1234567890");
+        RestrictedTextField restrictedp = new RestrictedTextField(this.jTextFieldIntegralQuintupleJ, "()+*-./eπ1234567890");
 //        restrictedp.setOnlyNums(true);
         restrictedp.setLimit(5);
 
@@ -6739,14 +6737,18 @@ public class Integral extends javax.swing.JFrame {
             long n = 0;
             funcion = this.jTextFieldIntegralSimpleExpresion.getText();
 
-            a = valorParametro(this.jTextFieldIntegralSimpleA.getText());
-            b = valorParametro(this.jTextFieldIntegralSimpleB.getText());
+            a = valorParametro2(this.jTextFieldIntegralSimpleA.getText());
+            b = valorParametro2(this.jTextFieldIntegralSimpleB.getText());
             n = Long.parseLong(this.jTextFieldIntegralSimplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralSimple(funcion, a, b, n);
             this.jTextField1SimpleValor.setText(r.getRespuesta());
             this.jTextField2SimpleError.setText(r.getEstimacionError());
             this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
+
+        } catch (SintaxisExcepcion e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("SintaxisExcepcion: " + e.getMessage());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -6768,16 +6770,19 @@ public class Integral extends javax.swing.JFrame {
             double d = 0.0;
             long n = 0;
             funcion = this.jTextFieldIntegralDobleExpresion.getText();
-            a = valorParametro(this.jTextFieldIntegralDobleA.getText());
-            b = valorParametro(this.jTextFieldIntegralDobleB.getText());
-            c = valorParametro(this.jTextFieldIntegralDobleC.getText());
-            d = valorParametro(this.jTextFieldIntegralDobleD.getText());
+            a = valorParametro2(this.jTextFieldIntegralDobleA.getText());
+            b = valorParametro2(this.jTextFieldIntegralDobleB.getText());
+            c = valorParametro2(this.jTextFieldIntegralDobleC.getText());
+            d = valorParametro2(this.jTextFieldIntegralDobleD.getText());
             n = Long.parseLong(this.jTextFieldIntegralDoblePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralDoble(funcion, a, b, c, d, n);
             this.jTextField3DobleValor.setText(r.getRespuesta());
             this.jTextField2DobleError.setText(r.getEstimacionError());
             this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
+        } catch (SintaxisExcepcion e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("SintaxisExcepcion: " + e.getMessage());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -6801,18 +6806,21 @@ public class Integral extends javax.swing.JFrame {
             double f = 0.0;
             long n = 0;
             funcion = this.jTextFieldIntegralTripleExpresion.getText();
-            a = valorParametro(this.jTextFieldIntegralTripleA.getText());
-            b = valorParametro(this.jTextFieldIntegralTripleB.getText());
-            c = valorParametro(this.jTextFieldIntegralTripleC.getText());
-            d = valorParametro(this.jTextFieldIntegralTripleD.getText());
-            e = valorParametro(this.jTextFieldIntegralTripleE.getText());
-            f = valorParametro(this.jTextFieldIntegralTripleF.getText());
+            a = valorParametro2(this.jTextFieldIntegralTripleA.getText());
+            b = valorParametro2(this.jTextFieldIntegralTripleB.getText());
+            c = valorParametro2(this.jTextFieldIntegralTripleC.getText());
+            d = valorParametro2(this.jTextFieldIntegralTripleD.getText());
+            e = valorParametro2(this.jTextFieldIntegralTripleE.getText());
+            f = valorParametro2(this.jTextFieldIntegralTripleF.getText());
             n = Long.parseLong(this.jTextFieldIntegralTriplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralTriple(funcion, a, b, c, d, e, f, n);
             this.jTextField5TripleValor.setText(r.getRespuesta());
             this.jTextField2TripleError.setText(r.getEstimacionError());
             this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
+        } catch (SintaxisExcepcion e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("SintaxisExcepcion: " + e.getMessage());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -6838,20 +6846,23 @@ public class Integral extends javax.swing.JFrame {
             double h = 0.0;
             long n = 0;
             funcion = this.jTextFieldIntegralCuadrupleExpresion.getText();
-            a = valorParametro(this.jTextFieldIntegralCuadrupleA.getText());
-            b = valorParametro(this.jTextFieldIntegralCuadrupleB.getText());
-            c = valorParametro(this.jTextFieldIntegralCuadrupleC.getText());
-            d = valorParametro(this.jTextFieldIntegralCuadrupleD.getText());
-            e = valorParametro(this.jTextFieldIntegralCuadrupleE.getText());
-            f = valorParametro(this.jTextFieldIntegralCuadrupleF.getText());
-            g = valorParametro(this.jTextFieldIntegralCuadrupleG.getText());
-            h = valorParametro(this.jTextFieldIntegralCuadrupleH.getText());
+            a = valorParametro2(this.jTextFieldIntegralCuadrupleA.getText());
+            b = valorParametro2(this.jTextFieldIntegralCuadrupleB.getText());
+            c = valorParametro2(this.jTextFieldIntegralCuadrupleC.getText());
+            d = valorParametro2(this.jTextFieldIntegralCuadrupleD.getText());
+            e = valorParametro2(this.jTextFieldIntegralCuadrupleE.getText());
+            f = valorParametro2(this.jTextFieldIntegralCuadrupleF.getText());
+            g = valorParametro2(this.jTextFieldIntegralCuadrupleG.getText());
+            h = valorParametro2(this.jTextFieldIntegralCuadrupleH.getText());
             n = Long.parseLong(this.jTextFieldIntegralCuadruplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralCuadruple(funcion, a, b, c, d, e, f, g, h, n);
             this.jTextField5CuadrupleValor.setText(r.getRespuesta());
             this.jTextField2CuadrupleError.setText(r.getEstimacionError());
             this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
+        } catch (SintaxisExcepcion e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("SintaxisExcepcion: " + e.getMessage());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -6879,22 +6890,25 @@ public class Integral extends javax.swing.JFrame {
             double j = 0.0;
             long n = 0;
             funcion = this.jTextFieldIntegralQuintupleExpresion.getText();
-            a = valorParametro(this.jTextFieldIntegralQuintupleA.getText());
-            b = valorParametro(this.jTextFieldIntegralQuintupleB.getText());
-            c = valorParametro(this.jTextFieldIntegralQuintupleC.getText());
-            d = valorParametro(this.jTextFieldIntegralQuintupleD.getText());
-            e = valorParametro(this.jTextFieldIntegralQuintupleE.getText());
-            f = valorParametro(this.jTextFieldIntegralQuintupleF.getText());
-            g = valorParametro(this.jTextFieldIntegralQuintupleG.getText());
-            h = valorParametro(this.jTextFieldIntegralQuintupleH.getText());
-            i = valorParametro(this.jTextFieldIntegralQuintupleI.getText());
-            j = valorParametro(this.jTextFieldIntegralQuintupleJ.getText());
+            a = valorParametro2(this.jTextFieldIntegralQuintupleA.getText());
+            b = valorParametro2(this.jTextFieldIntegralQuintupleB.getText());
+            c = valorParametro2(this.jTextFieldIntegralQuintupleC.getText());
+            d = valorParametro2(this.jTextFieldIntegralQuintupleD.getText());
+            e = valorParametro2(this.jTextFieldIntegralQuintupleE.getText());
+            f = valorParametro2(this.jTextFieldIntegralQuintupleF.getText());
+            g = valorParametro2(this.jTextFieldIntegralQuintupleG.getText());
+            h = valorParametro2(this.jTextFieldIntegralQuintupleH.getText());
+            i = valorParametro2(this.jTextFieldIntegralQuintupleI.getText());
+            j = valorParametro2(this.jTextFieldIntegralQuintupleJ.getText());
             n = Long.parseLong(this.jTextFieldIntegralQuintuplePuntos.getText());
             Respuesta r = new Respuesta();
             r = im.monteCarloIntegralQuintuple(funcion, a, b, c, d, e, f, g, h, i, j, n);
             this.jTextField5QuintupleValor.setText(r.getRespuesta());
             this.jTextField2QuintupleError.setText(r.getEstimacionError());
             this.jTextArea1.setText(jTextArea1.getText() + r.getRespuestaConsola());
+        } catch (SintaxisExcepcion e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
+            System.out.println("SintaxisExcepcion: " + e.getMessage());
         } catch (ParseException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Error durante el análisis sintáctico", JOptionPane.ERROR_MESSAGE);
             System.out.println("ParseException: " + e.getMessage());
@@ -6920,6 +6934,30 @@ public class Integral extends javax.swing.JFrame {
         }
         if (!cambio) {
             resultado = Double.parseDouble(valor);
+        }
+        return resultado;
+    }
+
+    private double valorParametro2(String valor) throws SintaxisExcepcion, ParseException, NumberFormatException, Exception {
+        double resultado = 0.0;
+        String resultadoParseo = "";
+        Parseador p;
+        p = new Parseador();
+        p.configuracion_1();
+        valor = valor.replace("e", "2.718281828459045");
+        valor = valor.replace("π", "pi");
+        valor = valor.replace("√", "sqrt");
+        valor = valor.replace("sen", "sin");
+        valor = valor.replace("arcsen", "asin");
+        valor = valor.replace("arccos", "acos");
+        valor = valor.replace("arctan", "atan");
+        String exp = valor;
+        resultadoParseo = p.parsearExpresion(exp);
+        System.out.println("resultadoParseo: " + resultadoParseo);
+        if (resultadoParseo.equals("ok")) {
+            resultado = Double.parseDouble(p.evaluarExpresionString());
+        } else {
+            throw new SintaxisExcepcion("Error de sintaxis en los intervalos de integración");
         }
         return resultado;
     }
