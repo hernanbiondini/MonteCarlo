@@ -3244,7 +3244,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = cadena + "√";
@@ -3263,7 +3262,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "^" + cadena;
@@ -3281,7 +3279,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "(" + cadena;
@@ -3301,7 +3298,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = ")" + cadena;
@@ -3353,7 +3349,6 @@ public class Integral extends javax.swing.JFrame {
     }
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "-" + cadena;
@@ -3372,7 +3367,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "*" + cadena;
@@ -3390,8 +3384,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "/" + cadena;
@@ -3433,8 +3426,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "w" + cadena;
@@ -3451,8 +3443,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "u" + cadena;
@@ -3469,8 +3460,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();       
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "z" + cadena;
@@ -3488,8 +3478,7 @@ public class Integral extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();      
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "y" + cadena;
@@ -3508,7 +3497,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "x" + cadena;
@@ -3545,7 +3533,6 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "1" + cadena;
@@ -3563,7 +3550,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "2" + cadena;
@@ -3581,7 +3568,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "3" + cadena;
@@ -3601,7 +3588,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "4" + cadena;
@@ -3621,7 +3608,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "5" + cadena;
@@ -3640,7 +3627,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "6" + cadena;
@@ -3659,7 +3646,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "7" + cadena;
@@ -3678,7 +3665,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "8" + cadena;
@@ -3697,7 +3684,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "9" + cadena;
@@ -3716,7 +3703,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "." + cadena;
@@ -3736,7 +3723,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "π" + cadena;
@@ -3755,7 +3742,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "e" + cadena;
@@ -3774,7 +3761,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "ln" + cadena;
@@ -3794,7 +3781,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "log" + cadena;
@@ -3814,7 +3801,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "sen" + cadena;
@@ -3834,7 +3821,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "cos" + cadena;
@@ -3853,7 +3840,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "tan" + cadena;
@@ -3872,7 +3859,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arcsen" + cadena;
@@ -3891,7 +3878,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arccos" + cadena;
@@ -3910,7 +3897,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralQuintupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arctan" + cadena;
@@ -3929,7 +3916,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "ln" + cadena;
@@ -3948,7 +3935,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "log" + cadena;
@@ -3967,7 +3954,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "sen" + cadena;
@@ -3986,7 +3973,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "cos" + cadena;
@@ -4005,7 +3992,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "tan" + cadena;
@@ -4024,7 +4011,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arcsen" + cadena;
@@ -4043,7 +4030,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arccos" + cadena;
@@ -4062,7 +4049,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "arctan" + cadena;
@@ -4099,7 +4086,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "1" + cadena;
@@ -4118,7 +4105,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "2" + cadena;
@@ -4137,7 +4124,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "3" + cadena;
@@ -4156,7 +4143,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "4" + cadena;
@@ -4175,7 +4162,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "5" + cadena;
@@ -4194,7 +4181,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "6" + cadena;
@@ -4213,7 +4200,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "7" + cadena;
@@ -4232,7 +4219,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         // TODO add your handling code here: posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "8" + cadena;
@@ -4251,7 +4238,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "9" + cadena;
@@ -4270,7 +4257,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "." + cadena;
@@ -4289,7 +4276,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "π" + cadena;
@@ -4308,7 +4295,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "e" + cadena;
@@ -4327,7 +4314,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "√" + cadena;
@@ -4346,7 +4333,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "^" + cadena;
@@ -4365,7 +4352,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "(" + cadena;
@@ -4384,7 +4371,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = ")" + cadena;
@@ -4437,7 +4424,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
         posicion = jTextFieldIntegralQuintupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "-" + cadena;
@@ -4456,7 +4443,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "*" + cadena;
@@ -4475,7 +4462,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton65ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "/" + cadena;
@@ -4518,7 +4505,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "u" + cadena;
@@ -4537,7 +4524,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "z" + cadena;
@@ -4556,7 +4543,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton71ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "y" + cadena;
@@ -4575,7 +4562,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton72ActionPerformed
         posicion = jTextFieldIntegralCuadrupleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralCuadrupleExpresion.getText();
         if (posicion == 0) {
             cadena = "x" + cadena;
@@ -4594,7 +4581,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton73ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "ln" + cadena;
@@ -4613,7 +4600,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton74ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "log" + cadena;
@@ -4631,7 +4618,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "sen" + cadena;
@@ -4650,7 +4637,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "cos" + cadena;
@@ -4669,7 +4656,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton77ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "tan" + cadena;
@@ -4688,7 +4675,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton78ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "arcsen" + cadena;
@@ -4707,7 +4694,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton79ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "arccos" + cadena;
@@ -4726,7 +4713,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton80ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "arctan" + cadena;
@@ -4745,7 +4732,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton81ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "0" + cadena;
@@ -4764,7 +4751,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton82ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "1" + cadena;
@@ -4783,7 +4770,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton83ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "2" + cadena;
@@ -4802,7 +4789,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton84ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "3" + cadena;
@@ -4821,7 +4808,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton85ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "4" + cadena;
@@ -4840,7 +4827,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton86ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "5" + cadena;
@@ -4859,7 +4846,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton87ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "6" + cadena;
@@ -4878,7 +4865,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton88ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "7" + cadena;
@@ -4897,7 +4884,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton89ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "8" + cadena;
@@ -4916,7 +4903,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "9" + cadena;
@@ -4935,7 +4922,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "." + cadena;
@@ -4953,7 +4940,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "π" + cadena;
@@ -4971,7 +4958,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "e" + cadena;
@@ -4990,7 +4977,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "√" + cadena;
@@ -5009,7 +4996,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "^" + cadena;
@@ -5028,7 +5015,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "(" + cadena;
@@ -5047,7 +5034,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = ")" + cadena;
@@ -5165,7 +5152,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+       
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "z" + cadena;
@@ -5184,7 +5171,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "y" + cadena;
@@ -5203,7 +5190,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton107ActionPerformed
         posicion = jTextFieldIntegralTripleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralTripleExpresion.getText();
         if (posicion == 0) {
             cadena = "x" + cadena;
@@ -5222,7 +5209,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton108ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "ln" + cadena;
@@ -5241,7 +5228,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton109ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "log" + cadena;
@@ -5260,7 +5247,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton110ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "sen" + cadena;
@@ -5279,7 +5266,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton111ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "cos" + cadena;
@@ -5298,7 +5285,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton112ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "tan" + cadena;
@@ -5317,7 +5304,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "arcsen" + cadena;
@@ -5336,7 +5323,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton114ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton114ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "arccos" + cadena;
@@ -5355,7 +5342,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton115ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton115ActionPerformed
         posicion = jTextFieldIntegralDobleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralDobleExpresion.getText();
         if (posicion == 0) {
             cadena = "arctan" + cadena;
@@ -5761,7 +5748,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton143ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton143ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "ln" + cadena;
@@ -5785,7 +5772,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton144ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton144ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "log" + cadena;
@@ -5804,7 +5791,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton145ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton145ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "sen" + cadena;
@@ -5823,7 +5810,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "cos" + cadena;
@@ -5842,7 +5829,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton147ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton147ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "tan" + cadena;
@@ -5864,7 +5851,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton148ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "arcsen" + cadena;
@@ -5886,7 +5873,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton149ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton149ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "arccos" + cadena;
@@ -5905,7 +5892,7 @@ public class Integral extends javax.swing.JFrame {
 
     private void jButton150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton150ActionPerformed
         posicion = jTextFieldIntegralSimpleExpresion.getCaretPosition();
-        System.out.println("ActionPerformed - ActionPerformed: " + posicion);
+        
         String cadena = this.jTextFieldIntegralSimpleExpresion.getText();
         if (posicion == 0) {
             cadena = "arctan" + cadena;
@@ -6953,7 +6940,6 @@ public class Integral extends javax.swing.JFrame {
         valor = valor.replace("arctan", "atan");
         String exp = valor;
         resultadoParseo = p.parsearExpresion(exp);
-        System.out.println("resultadoParseo: " + resultadoParseo);
         if (resultadoParseo.equals("ok")) {
             resultado = Double.parseDouble(p.evaluarExpresionString());
         } else {
