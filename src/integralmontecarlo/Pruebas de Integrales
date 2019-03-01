@@ -59,5 +59,7 @@ Error: 3.1408526305176905E-5   Tiempo 2 m 51 s
 Integral doble: √(4-x^2-y^2)  intervalos [0.0,1.25,0.0,1.25]  con  1.000.000.000  puntos: 2,6690573049019943  
 Error: 9.931682637135175E-6   Tiempo 28 m 15 s 
 
+Integral doble: √(4-x^2-y^2) intervalos [0.0,1.25,0.0,1.25] con 10.000.000.000 puntos: 2,6690520252154095 
+Error: 0,0000031407436323 Tiempo 0 d 4 h 37 m 43 s
 
 http://mathfaculty.fullerton.edu/mathews/n2003/montecarlomod.html
