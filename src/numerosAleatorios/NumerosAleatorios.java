@@ -29,7 +29,7 @@ public class NumerosAleatorios {
 
     public static void main(String[] args) {
         int cont = 1;
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println(" N - " + cont +": " +  Math.random());
             cont = cont +1;
         }

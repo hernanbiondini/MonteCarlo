@@ -45,7 +45,6 @@ public class MonteCarlo {
             double sum = 0;
             for (long i = 0; i < n; i++) {
                 x = Math.random() * (b - a) + a;
-                System.out.println(" x: " + x);
                 p.agregarVariable("x", x);
                 sum += p.evaluarExpresionDouble();
                 fs = fs + p.evaluarExpresionDouble();
