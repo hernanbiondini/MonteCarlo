@@ -53,7 +53,7 @@ public class MonteCarloCanvas extends Canvas {
 
         double magX = .5 - x;
         double magY = .5 - y;
-        boolean inUnitCircle = Math.sqrt(magX * magX + magY * magY) <= .5;
+        boolean inUnitCircle = Math.sqrt(magX * magX + magY * magY) <= .5; // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
         // Sincronizar en puntos para que el hilo de actualización no llegue y
         // intenta dibujar mientras lo estamos actualizando.

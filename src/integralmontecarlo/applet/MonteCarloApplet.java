@@ -133,7 +133,7 @@ public class MonteCarloApplet extends Applet implements Runnable, ActionListener
             }
             numPoints++;
             count.setText("" + numPoints);
-            piApprox.setText("" + df.format((double) pointsInCircle * 4 / numPoints));
+            piApprox.setText("" + df.format((double) pointsInCircle * 4 / numPoints)); // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             // En algunas plataformas (Netscape bajo Linux, por ejemplo),
             // es muy difícil dar el hilo de dibujo (el que
             // llama a update ()) una oportunidad para ejecutar. Se necesita dormir al menos 5
