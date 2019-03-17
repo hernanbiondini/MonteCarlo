@@ -26,6 +26,7 @@ public class MonteCarlo {
         DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
+        double funcionEvaluada = 0.0;
         Parseador p;
         p = new Parseador();
         p.configuracion_1();
@@ -44,11 +45,12 @@ public class MonteCarlo {
             double errest = 0.0;
             double sum = 0;
             for (long i = 0; i < n; i++) {
-                x = Math.random() * (b - a) + a;
+                x = a + Math.random() * (b - a);
                 p.agregarVariable("x", x);
-                sum += p.evaluarExpresionDouble();
-                fs = fs + p.evaluarExpresionDouble();
-                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                funcionEvaluada = p.evaluarExpresionDouble();
+                sum += funcionEvaluada;
+                fs = fs + funcionEvaluada;
+                f2s = f2s + funcionEvaluada * funcionEvaluada;
             }
             approx = (b - a) * sum / n;
             fs = fs / n;
@@ -82,6 +84,7 @@ public class MonteCarlo {
         DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
+         double funcionEvaluada = 0.0;
         Parseador p;
         p = new Parseador();
         p.configuracion_1();
@@ -107,9 +110,10 @@ public class MonteCarlo {
                 y = c + Math.random() * Math.abs(d - c);
                 p.agregarVariable("x", x);
                 p.agregarVariable("y", y);
-                sum += p.evaluarExpresionDouble();
-                fs = fs + p.evaluarExpresionDouble();
-                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                funcionEvaluada = p.evaluarExpresionDouble();
+                sum += funcionEvaluada;
+                fs = fs + funcionEvaluada;
+                f2s = f2s + funcionEvaluada * funcionEvaluada;
             }
             approx = Math.abs(b - a) * Math.abs(d - c) * sum / n;
 
@@ -144,6 +148,7 @@ public class MonteCarlo {
         DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
+        double funcionEvaluada = 0.0;
         Parseador p;
         p = new Parseador();
         p.configuracion_1();
@@ -172,9 +177,10 @@ public class MonteCarlo {
                 p.agregarVariable("x", x);
                 p.agregarVariable("y", y);
                 p.agregarVariable("z", z);
-                sum += p.evaluarExpresionDouble();
-                fs = fs + p.evaluarExpresionDouble();
-                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                funcionEvaluada = p.evaluarExpresionDouble();
+                sum += funcionEvaluada;
+                fs = fs + funcionEvaluada;
+                f2s = f2s + funcionEvaluada * funcionEvaluada;
             }
             approx = Math.abs(b - a) * Math.abs(d - c) * Math.abs(f - e) * sum / n;
 
@@ -209,6 +215,7 @@ public class MonteCarlo {
         DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
+        double funcionEvaluada = 0.0;
         Parseador p;
         p = new Parseador();
         p.configuracion_1();
@@ -241,9 +248,10 @@ public class MonteCarlo {
                 p.agregarVariable("y", y);
                 p.agregarVariable("z", z);
                 p.agregarVariable("u", u);
-                sum += p.evaluarExpresionDouble();
-                fs = fs + p.evaluarExpresionDouble();
-                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                funcionEvaluada = p.evaluarExpresionDouble();
+                sum += funcionEvaluada;
+                fs = fs + funcionEvaluada;
+                f2s = f2s + funcionEvaluada * funcionEvaluada;
             }
             approx = Math.abs(b - a) * Math.abs(d - c) * Math.abs(f - e) * Math.abs(h - g) * sum / n;
 
@@ -278,6 +286,7 @@ public class MonteCarlo {
         DecimalFormat formatea = new DecimalFormat("###,###.##");
         String resultadoParseo = "";
         double approx = 0.0;
+        double funcionEvaluada = 0.0;
         Parseador p;
         p = new Parseador();
         p.configuracion_1();
@@ -314,9 +323,10 @@ public class MonteCarlo {
                 p.agregarVariable("z", z);
                 p.agregarVariable("u", u);
                 p.agregarVariable("w", w);
-                sum += p.evaluarExpresionDouble();
-                fs = fs + p.evaluarExpresionDouble();
-                f2s = f2s + p.evaluarExpresionDouble() * p.evaluarExpresionDouble();
+                funcionEvaluada = p.evaluarExpresionDouble();
+                sum += funcionEvaluada;
+                fs = fs + funcionEvaluada;
+                f2s = f2s + funcionEvaluada * funcionEvaluada;
             }
             approx = Math.abs(b - a) * Math.abs(d - c) * Math.abs(f - e) * Math.abs(h - g) * Math.abs(j - i) * sum / n;
 

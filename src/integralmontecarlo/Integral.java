@@ -6710,7 +6710,7 @@ public class Integral extends javax.swing.JFrame {
         restrictedf.setLimit(15);
         RestrictedTextField restrictedg = new RestrictedTextField(this.jTextFieldIntegralCuadruplePuntos);
         restrictedg.setOnlyNums(true);
-        restrictedg.setLimit(5);
+        restrictedg.setLimit(15);
         RestrictedTextField restrictedh = new RestrictedTextField(this.jTextFieldIntegralQuintuplePuntos);
         restrictedh.setOnlyNums(true);
         restrictedh.setLimit(15);
